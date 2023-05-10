@@ -1,0 +1,417 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:ital,wght@0,600;0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;400;600;700&display=swap');
+
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap'); */
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:ital,wght@0,600;0,700;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+ 
+  
+
+
+  .gradient-01 {
+    background-image: linear-gradient(
+      270deg,
+      hsl(295deg 76% 51%) 0%,
+      hsl(284deg 70% 73%) 26%,
+      hsl(257deg 70% 86%) 39%,
+      hsl(202deg 92% 90%) 50%,
+      hsl(215deg 77% 81%) 61%,
+      hsl(221deg 73% 70%) 74%,
+      hsl(220deg 76% 51%) 100%
+    );
+    filter: blur(125px);
+  }
+
+
+
+
+
+
+  .gradient-orange {
+    background-image: linear-gradient(
+      270deg,
+      hsl(34, 76%, 51%) 0%,
+      hsl(30, 70%, 73%) 26%,
+      hsl(25, 70%, 86%) 39%,
+      hsl(20, 92%, 90%) 50%,
+      hsl(25, 77%, 81%) 61%,
+      hsl(27, 73%, 70%) 74%,
+      hsl(26, 76%, 51%) 100%
+    );
+    filter: blur(75px);
+  }
+  
+
+
+  .hero-gradient {
+    background: linear-gradient(
+      97.86deg,
+      #a509ff 0%,
+      #34acc7 53.65%,
+      #a134c7 100%
+    );
+  }
+  
+  .gradient-02 {
+    position: absolute;
+    width: 200px;
+    height: 438px;
+    top: 0px;
+    right: 0px;
+  
+    background: #7aebfb;
+    filter: blur(190px);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+body {
+  font-family: 'Blinker', sans-serif;
+  /* font-family: 'Space Grotesk', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
+  
+  position: relative;
+}
+/* font-family: 'DM Sans', sans-serif; */
+/* font-family: 'Nunito Sans', sans-serif; */
+html {
+  font-size: 62.5%;
+}
+
+/* global */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 19px;
+}
+
+
+
+
+@layer apply {
+  
+
+  /* GradColors  */
+  
+  
+  
+  
+  .gradcolor1{
+    @apply  bg-clip-text  text-transparent bg-gradient-to-t from-cyan-500 via-violet-400 to-blue-500       
+  }
+  
+  .gradcolor2{
+    @apply  bg-clip-text  text-transparent bg-gradient-to-tr from-blue-600 via-violet-400 to-purple-600    
+      
+  }
+  
+  .gradcolor3{
+    @apply  bg-clip-text  text-transparent bg-gradient-to-tl from-violet-500 to-red-600 
+  }
+  
+  .gradcolor4{
+    @apply  bg-clip-text  text-transparent bg-gradient-to-tl from-cyan-600 via-blue-400 to-blue-600   
+  
+  }
+  
+  .gradcolor5{
+    @apply  bg-clip-text  text-transparent bg-gradient-to-tl from-pink-600 via-pink-400 to-red-500       
+  }
+  
+  .gradcolor6{
+    @apply  bg-clip-text  text-transparent bg-gradient-to-b from-green-400 via-green-500 to-green-600       
+  }
+  .sty{
+    @apply sm:p-[10rem] p-[1rem]  sm:my-[1rem] my-[7rem] ;
+  }
+ 
+   
+  
+   
+  }
+  
+  
+
+
+
+/* offercard
+ */
+
+
+.card-box img {
+  width: 500px;
+  height: auto;
+  filter: drop-shadow(10px 10px 30px #00000049);
+  transition: all 0.75s ease-in-out;
+}
+
+
+  
+ 
+.card-box {
+  margin:  2.3rem;
+  padding: 26px 38px;
+  border-radius: 30px;
+  width: 450px;
+  height: 540px;
+  transition-delay: 0.5s;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+
+.card-box::after {
+  content: "";
+  position: absolute;
+  background-color: #f7efe5;
+  height: 350px;
+  width: 350px;
+  z-index: -1;
+  margin-top: 0;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+.card-content {
+  min-width: 10px;
+  width: 100%;
+  scale: 0;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+
+.card-box:hover .card-content {
+  transition: all 0.5s ease-in-out;
+  min-width: 400px;
+  scale: 1;
+}
+.card-box:hover .card-content {
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+
+
+.card-box:hover {
+  width: 960px;
+}
+
+
+
+.card-box:hover::after {
+  scale: 5;
+  background-color: #d4b48f;
+  transition: all 1s ease-in-out;
+}
+
+
+
+.card-box:hover img {
+  scale: 1.1;
+  transform: rotate(16deg);
+}  
+
+
+@media (max-width: 390px) {
+  
+  .card-box {
+    margin: 10rem 2rem;
+    padding: 80px;
+    border-radius: 20px;
+    width: 450px;
+    height: 740px;
+    transition-delay: 0.5s;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    background: #ce1818;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .card-box::after {
+    content: "";
+    position: absolute;
+    background-color: #f7efe5;
+    height: 300px;
+    width: 300px;
+    padding: 60px;
+    z-index: -1;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+  }
+  .card-box img {
+    width: 500px;
+    height: auto;
+    filter: drop-shadow(10px 10px 30px #00000049);
+    transition: all 0.75s ease-in-out;
+    /* position: absolute; */
+  }
+   
+.card-box::after {
+  scale: 2;
+  background-color: #bc731f;
+  transition: all 1s ease-in-out;
+}
+
+ 
+.card-box  .card-content {
+  transition: all 0.5s ease-in-out;
+  min-width: 500px;
+  scale: 1;
+}
+
+.card-box  {
+  height: 400px;
+  display: flex;
+}
+
+
+.card-box:hover img {
+  scale: 1.41;
+  transform: rotate(16deg);
+  margin-bottom: 20px;
+}  
+
+.card-box img {
+  scale: 2.6;
+  margin-bottom: 120px;
+  margin-top: 30px;
+}  
+ 
+
+}
+
+
+
+/* Slider ------------------------- */
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #5966fb;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f5b132;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f6ac17;
+}
+
+
+
+/* glowingShadow */
+.myShadow{
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,0 0 200px #0072ff;
+  color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+<h2 className="sm:text-[8rem]  mt-[8rem] sm:mt-[6rem] text-amber-500 text-[3.6rem] text-center font-extrabold uppercase z-10" >Our Popular Items</h2>
+<section className=" flex  flex-col  items-center justify-center sm:flex-row  ">
+
+
+<div className="flex  justify-center   items-center  ">
+<div className= "card-box   ">
+  <div className="card-content   ">
+    <h2 className="text-[2.3rem] sm:text-start text-center font-extrabold  sm:text-[4rem]" >EXPLORE NEW FLAVOUR COFFEE</h2>
+    <p className="text-xl text-start  mx-[5rem] text-white sm:mx-0 max-w-[36rem]  " > Fresh Coffee is The Place Where You Can Find the Best Coffee in this Whole Towm !
+    We Highly Recommend to Visit This Coffee Shop With Your Family Members</p>
+
+    <h3 className="sm:text-[2rem]  text-[2rem] ml-[5rem]   mx-10 sm:mx-0  uppercase">Home Delivery Available</h3>
+
+    <button class="bg-white   ml-[5rem] text-[1.6rem] sm:text-[2rem]  font-medium   my-4 sm:font-bold sm:py-2 py-1 px-4 sm:px-6 rounded-lg">
+       ORDER NOW
+    </button>      
+  </div>
+  <img className="card-image" src="https://www.shadevelopers.com/wp-content/uploads/2023/03/coffee.webp" alt="" />
+</div>
+</div>
+
+<div className="flex justify-center   items-center  ">
+<div className= "card-box   ">
+  <div className="card-content   ">
+    <h2 className="text-[2.3rem] sm:text-start text-center font-extrabold  sm:text-[4rem]" >EXPLORE NEW FLAVOUR COFFEE</h2>
+    <p className="text-xl text-start  mx-[5rem] text-white sm:mx-0 max-w-[36rem]  " > Fresh Coffee is The Place Where You Can Find the Best Coffee in this Whole Towm !
+    We Highly Recommend to Visit This Coffee Shop With Your Family Members</p>
+
+    <h3 className="sm:text-[2rem]  text-[2rem] ml-[5rem]   mx-10 sm:mx-0  uppercase">Home Delivery Available</h3>
+
+    <button class="bg-white   ml-[5rem] text-[1.6rem] sm:text-[2rem]  font-medium   my-4 sm:font-bold sm:py-2 py-1 px-4 sm:px-6 rounded-lg">
+       ORDER NOW
+    </button>      
+  </div>
+  <img className="card-image" src="https://www.shadevelopers.com/wp-content/uploads/2023/03/coffee.webp" alt="" />
+</div>
+
+
+
+</div>
+
+</section> */
