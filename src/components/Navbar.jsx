@@ -51,7 +51,7 @@ function Navbar() {
 
 
       if (isSticky) {
-        setNavbarColor('#FF7500'); 
+        setNavbarColor('rgba(287, 165, 0, 0.7)'); 
         navbarTextColor('#000'); /// Change this color to your desired navbar color
       } else {
         setNavbarColor('transparent');
@@ -119,8 +119,7 @@ function Navbar() {
         </div>
       </div>
       
-   
- 
+
 
       <motion.nav 
       variants={navVariants}
@@ -128,15 +127,16 @@ function Navbar() {
       whileInView="show"
       // className={`${styles.xPaddings} py-8 relative`}
       style={{ backgroundColor: navbarColor}}
-      className={`z-[100] fixed  transition-all    top-1 rounded-2xl mx-4  w-[98%]`}
+      className={`z-[100] fixed  transition-all   mr-3 ml-1 h-[5.5rem] top-1 rounded-2xl sm:mx-4  w-[98%]`}
       >
+    
    
       <div className="container flxed z-10 ">
           <div className={`flex justify-between items-center h-[6rem] ${sticky ? "cont-sticky" : ""}`}>
             <Link to="/">
                 <h1 
                 style={{color: navbarTextColor}}
-                className=" flex-1 font-Poppins z-10    text-[3rem]" >All<span  >Mart</span> </h1>
+                className=" flex-1  z-100  text-[2rem] font-space  font-extrabold   sm:text-[3rem]" >ALL<span  >MART</span> </h1>
             </Link>
        
             <div className=" text-[1.8rem] hidden items-center sm:flex gap-[3rem]">

@@ -2,7 +2,7 @@ import React from 'react'
 import './Heading.css'
 import { navVariants } from '../utils/motion';
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -12,39 +12,38 @@ const Heading = () => {
      <>
      <section>
      
-     <motion.div
+     <div className="absolute w-[50%] h-[10%] inset-0 gradient-orange " />
+     <motion.nav
      variants={navVariants}
      initial= "hidden" 
      whileInView="show"
      >
+    
+     <div className="flex flex-col  items-center mt-[11rem] sm:mt-[14rem]  justify-center">
      
-     <div className="absolute w-[50%] top-0 left-0  inset-0 gradient-orange " />
-     <div className="absolute w-[90%] inset-0 gradient-02 " />
-
-     <div className="flex flex-col leading-20 items-center mt-[5rem] sm:mt-[10rem]  justify-center">
-     
-     <div className="absolute z-[0] h-[10rem]  w-[69%] inset-0 gradient-01 " />
+    
      <div className="absolute w-[90%] h-[10rem] inset-0 gradient-orange " />
-      <h2 className="text-[5rem] font-space font-bold  z-10" >We Deliver the Best Groceries in Time </h2>
-      <p className="text-[3rem]" >Everything all at once 
-      <span className="relative"> 
-      <span className="absolute h-1 w-[95%] top-14  bg-orange-400"></span>
-       ALLMART </span></p>
-      <button>
+      <h2 className=" text-[3.8rem] text-center sm:text-[7.2rem] z-100 sm:leading-[87px]   leading-[40px] mantext orange-text-radient font-bold z-10" >We Deliver the Best Groceries in Time </h2>
+      <p className=" z-10 text-[1.9rem] text-orange-700 font-space mt-2  sm:text-[3rem]" >Everything all at once  
+     
+      <span className="relative text-black   ml-3"> 
+      <span className="absolute h-1 rounded-3xl w-[95%]  top-9 sm:top-14  bg-orange-400"></span>
+        ALLMART 
+       </span>
+       </p>
 
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span> Expolore Mart 
-</button>
-
-        
-
-
-
+       <Link 
+       to="categories/groceries"
+       
+       >
+      
+       <button className=" mt-10 sm:mt-12 font-space  mybutton " >
+               Expolore Mart 
+       </button>
+       </Link>
      </div>
 
-     </motion.div>
+     </motion.nav>
      </section>
      </>
   )

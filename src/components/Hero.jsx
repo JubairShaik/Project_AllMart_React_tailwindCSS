@@ -5,36 +5,46 @@ import Main3 from "../img/header/home-img-3.jpg";
 import Main4 from "../img/header/home-img-4.jpg";
 import { Link } from "react-router-dom";
 import Img13 from "../img/products/13.jpg";
- 
-
-
+import { navVariants } from '../utils/motion';
+import { motion } from "framer-motion";
 
 
 function Hero() {
   return (
     <>
-      <div className="home-container">
+      <motion.div 
+      variants={navVariants}
+      initial= "hidden" 
+      whileInView="show"
+      className="home-container ">
         <div className="container">
+
+
           <div className="grid-container">
-          
-            <div className="featured grayscale-0  grid-one">
+            <div 
+            
+            className="featured grayscale-0  grid-one">
               <Link to="categories/groceries">
                 <div id="img1" className="lil-overlay"></div>
-                <img src={Img13} alt="" />
-                <p className="main-description ">GROCERY & STAPLES</p>
+                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/04/28/16/supermarket-trolley-groceries.jpg?quality=50&width=640&auto=webp" alt="img3" />
+            
+                <p className="main-description  font-space ">GROCERY & STAPLES</p>
               </Link>
             </div>
+
+
+
             <div className="featured grid-two">
               <Link to="categories/dairy">
                 <div id="img2" className="lil-overlay"></div>
-                <img src="https://2hrsdelivery.in/wp-content/uploads/2021/12/online-fresh-chicken-order-near-me-Bangalore-India-2hrsdelivery.in_.jpg" alt="img1" />
-                <p className="main-description">Home Essensials</p>
+                <img src="https://shriandsam.files.wordpress.com/2018/10/207f483c5a4729eddd5a7eb41cacf80d.jpg?w=768" alt="img1" />
+                <p className="  main-description capitalize ">HOME ESSENSIALS</p>
               </Link>
             </div>
             <div className="featured grid-four">
               <Link to="categories/kitchen">
                 <div id="img3" className="lil-overlay"></div>
-                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/04/28/16/supermarket-trolley-groceries.jpg?quality=50&width=640&auto=webp" alt="img3" />
+                <img src="https://tse3.mm.bing.net/th?id=OIP.G0WF1hoNLhe-lVdknOY7vQHaFn&pid=Api&P=0" alt="img3" />
                 <p className="main-description">DAIRY & FROZEN</p>
               </Link>
             </div>
@@ -47,7 +57,7 @@ function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
      
     </>
   );

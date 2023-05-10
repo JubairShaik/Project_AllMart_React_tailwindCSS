@@ -23,7 +23,7 @@ function Home() {
   return (
     <>
     <Heading/>
-      <Hero />
+    <Hero />
       <ProudProducts />
       <Banner
         title="We Deliver The Best in The Town"

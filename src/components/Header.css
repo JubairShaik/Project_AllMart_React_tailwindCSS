@@ -9,7 +9,7 @@
 }
 
 .home-container {
-    padding-top: 12rem;
+    padding-top: 4rem;
 }
 
 .featured {
@@ -21,10 +21,13 @@
 .main-description {
     position: absolute;
     bottom: 2rem;
-    left: 2rem;
+    left: 1.2rem;
     color: white;
-    font-size: 3.8rem;
+    background-color: rgba(236, 230, 230, 0.4); 
+    border-radius: 10px;
+    font-size: 3rem;
     font-weight: 600;
+     padding: 2px 4px;
 }
 
 .featured img {
@@ -59,29 +62,13 @@
     left: 0;
    
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease-in;
 }
 
 
 
-#img1:hover {
-    filter: grayscale(1);
-    background-color: rgba(0, 0, 0, 0.2) !important;
-}
 
-#img2:hover {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-}
-
-#img3:hover {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-}
-
-#img4:hover {
-     
-    background-color: rgba(0, 0, 0, 0.2) !important;
-}
 
 @media (max-width:750px) {
     .grid-container {
@@ -105,7 +92,11 @@
     .main-description {
         bottom: 1rem;
         left: 0.5rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
+        color:rgb(243, 225, 191);
+        padding: 0px 7px ;
+        border-radius: 5px;
+        
     }
     
 .lil-overlay{
@@ -116,6 +107,6 @@
     border-radius: 10px;
 }
 .home-container {
-    padding-top: 8.3rem;
+    padding-top: 2.5rem;
 }
 }
