@@ -1,8 +1,10 @@
 import { items } from "./AllData";
 import { Link } from "react-router-dom";
 import RatingLabel from './../pages/RatingLabel';
-
-
+import { motion } from 'framer-motion';
+import MotionWrap from './../wrapper/MotionWrap';
+import AppWrap from './../wrapper/AppWrap';
+ 
 
 function ProductItem() {
 
@@ -18,9 +20,11 @@ function ProductItem() {
             onClick={() => window.scrollTo(0, 0)} 
           >
 
-          <div className="flex   CardStyles my-10  bg-red-5000 mx-2 px-1 rounded-[10px] bg-red00   flex-col items-center" >
+          <div
+          
+          className="flex CardStyles my-10  bg-red-5000 mx-2 px-1 rounded-[10px] bg-red00   flex-col items-center" >
 
-          <div className="sm:w-[355px] relative w-[318px] mt-2 p-2 rounded-[13px]  h-[200px] sm:h-[220px]  ">
+          <div className=" relative w-[359px] mt-2 p-2 rounded-[13px]  h-[240px] sm:h-[220px]  ">
               <img src={item.img}  className="h-full  px-1    rounded-[18px] w-full object-cover
                hover:slale-110"   alt="product1" />
                <p className= "font-Poppins text-xl text-slate-300 bg-slate-600 absolute right-5  bottom-5  rounded-md px-3 py-1"> {item.DeliveryTime}</p>
@@ -72,4 +76,4 @@ function ProductItem() {
   );
 }
 
-export default ProductItem;
+export default  ProductItem;

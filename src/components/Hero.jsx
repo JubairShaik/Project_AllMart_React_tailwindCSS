@@ -7,15 +7,15 @@ import { Link } from "react-router-dom";
 import Img13 from "../img/products/13.jpg";
 import { navVariants } from '../utils/motion';
 import { motion } from "framer-motion";
-
+import AppWrap from './../wrapper/AppWrap';
+import MotionWrap from './../wrapper/MotionWrap';
+ 
 
 function Hero() {
   return (
     <>
       <motion.div 
-      variants={navVariants}
-      initial= "hidden" 
-      whileInView="show"
+       
       className="home-container ">
         <div className="container">
 
@@ -63,4 +63,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default AppWrap(MotionWrap(Hero));

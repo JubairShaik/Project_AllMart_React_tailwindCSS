@@ -4,19 +4,19 @@ import TrendingItem from "./TrendingItem";
 function TrendingSlider() {
   const slideLeft = () => {
     let slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft - 235;
+    slider.scrollLeft = slider.scrollLeft - 388.5;
   };
 
   const slideRight = () => {
     let slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 305;
+    slider.scrollLeft = slider.scrollLeft + 388.5;
   };
 
   return (
     <div className="trending">
-      <div className="container">
-        <div className="title-btns">
-          <h3 className="text-[2.4rem] sm:text-[5rem] font-bold   gradcolor4" > Trending Now</h3>
+      <div className=" cotainer mx-[1rem] md:mx-[10rem] ">
+        <div className="title-btns ">
+          <h3 className="text-[2.4rem] sm:text-[7rem] font-bold  font-Poppins  gradcolor6" > Trending Now</h3>
           <div className="btns">
             <button title="scroll left" onClick={slideLeft}>
               <i className="fa-solid fa-arrow-left"></i>

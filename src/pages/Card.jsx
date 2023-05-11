@@ -1,4 +1,6 @@
 import { useState } from "react";
+import AppWrap from './../wrapper/AppWrap';
+import MotionWrap from './../wrapper/MotionWrap';
 
 const  Card = () => {
 
@@ -41,4 +43,4 @@ const product = {
 };
 
 
-export default Card ;
+export default AppWrap(MotionWrap(Card)) ;

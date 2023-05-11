@@ -9,6 +9,9 @@ import Banner1 from "../img/banner/banner1.jpg";
 import Banner2 from "../img/banner/banner2.jpg";
 import Slider from './../components/Slider';
 import Heading from './../components/Heading';
+import Auth from './Auth';
+
+
 
 var images = [
   "https://img.freepik.com/free-photo/young-woman-with-fruit-her-hands-supermarket_169016-5032.jpg?w=1060&t=st=1681473129~exp=1681473729~hmac=63441eac4a266ae28658488589575016c8db42d0f718bbbdad42a5ded6f1b221",
@@ -19,20 +22,24 @@ var images = [
 ];
 
 
-function Home() {
+function Home( ) {
   return (
     <>
     <Heading/>
     <Hero />
       <ProudProducts />
       <Banner
-        title="We Deliver The Best in The Town"
-        text="AllMart is the Solution for all Your needs now"
-        img={Banner1}
+
+      
+        title="Freshness guaranteed"
+        text=" Our produce is picked at peak ripeness and delivered straight to your doorstep"
+        
       />
       <TrendingSlider />  
-      <Slider time={2300}  images={images}/>
+      <Slider time={2900}  images={images}/>
       <Newsletter />
+      <Auth />
+
       <Footer />
     </>
   );

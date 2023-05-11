@@ -38,6 +38,9 @@ a {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
      transition: all 0.2s ;
 }
+
+
+
 .ProductCard{
     height: 15rem;
     background: #bd0c0c;

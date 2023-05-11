@@ -1,9 +1,22 @@
 import { Link } from "react-router-dom";
 import "./Banner.css";
+import { motion } from 'framer-motion';
+import { navVariants } from './../utils/motion';
+import cartimage from "../img/Fruits.avif";
 
-function Banner({ title, text, img }) {
+
+
+
+
+function Banner({ title, text  }) {
   return (
-    <div className="banner">
+    <motion.div
+    variants={navVariants}
+    initial= "hidden" 
+    whileInView="show"
+
+    
+     className="banner">
       <div className="container   ">
         <div className="banner-container   ">
           <div className="text-side">
@@ -15,12 +28,12 @@ function Banner({ title, text, img }) {
               </Link>
             </div>
           </div>
-          <div className="img-side">
-            <img src="https://c4.wallpaperflare.com/wallpaper/447/908/942/food-chicken-ketchup-meat-hd-wallpaper-preview.jpg" alt="banner" />
-          </div>
+             <div className="img-side rounded-tr-[2rem] rounded-bl-[2rem]  ">
+                <img  className=" cursor-pointer  transition-all   rounded-tr-[2rem] rounded-br-[2rem] " src={cartimage} alt="" />
+             </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
