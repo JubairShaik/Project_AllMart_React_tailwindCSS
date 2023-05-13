@@ -14,6 +14,9 @@ function ProductItem() {
     <>
       {filteredItems.map((item) => (
         <div key={item.id} className=" ">
+
+
+
           <Link
 
             to = {`categories/product/${item.id}`}
@@ -35,10 +38,7 @@ function ProductItem() {
              <p className="text-3xl font-thin font-Poppins p-1">{item.description}</p>
              <p><RatingLabel rating={item.rating} /></p>
              </div>
-               
-         
-
-
+              
             <div className=" text-3xl gap-10 flex items-center justify-between">
               <p className="text-2xl flex items-center ">{item.cuisines.join(",")}</p>
               <p className=" font-Poppins "><span className="text-4xl">₹</span>{item.price}</p>
@@ -72,8 +72,11 @@ function ProductItem() {
           </Link>
         </div>
       ))}
+
+
+      
     </>
   );
 }
 
-export default  ProductItem;
+export default  (ProductItem);

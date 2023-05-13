@@ -16,7 +16,7 @@
 
    }
    
-   button:hover {
+   .mybutton:hover {
     box-shadow: 0 0 10px #ea481b, 0 0 25px #f58917, 0 0 50px #f28526;
     transition-delay: 0.1s;
    }

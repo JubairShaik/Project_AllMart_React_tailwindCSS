@@ -10,7 +10,7 @@ import Banner2 from "../img/banner/banner2.jpg";
 import Slider from './../components/Slider';
 import Heading from './../components/Heading';
 import Auth from './Auth';
-
+import SearchBar from './../components/SearchBar';
 
 
 var images = [
@@ -27,6 +27,7 @@ function Home( ) {
     <>
     <Heading/>
     <Hero />
+    
       <ProudProducts />
       <Banner
 
@@ -39,7 +40,6 @@ function Home( ) {
       <Slider time={2900}  images={images}/>
       <Newsletter />
       <Auth />
-
       <Footer />
     </>
   );

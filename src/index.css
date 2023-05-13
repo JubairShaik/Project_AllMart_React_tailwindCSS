@@ -452,111 +452,12 @@ html {
   color: #FFF;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-<h2 className="sm:text-[8rem]  mt-[8rem] sm:mt-[6rem] text-amber-500 text-[3.6rem] text-center font-extrabold uppercase z-10" >Our Popular Items</h2>
-<section className=" flex  flex-col  items-center justify-center sm:flex-row  ">
-
-
-<div className="flex  justify-center   items-center  ">
-<div className= "card-box   ">
-  <div className="card-content   ">
-    <h2 className="text-[2.3rem] sm:text-start text-center font-extrabold  sm:text-[4rem]" >EXPLORE NEW FLAVOUR COFFEE</h2>
-    <p className="text-xl text-start  mx-[5rem] text-white sm:mx-0 max-w-[36rem]  " > Fresh Coffee is The Place Where You Can Find the Best Coffee in this Whole Towm !
-    We Highly Recommend to Visit This Coffee Shop With Your Family Members</p>
-
-    <h3 className="sm:text-[2rem]  text-[2rem] ml-[5rem]   mx-10 sm:mx-0  uppercase">Home Delivery Available</h3>
-
-    <button class="bg-white   ml-[5rem] text-[1.6rem] sm:text-[2rem]  font-medium   my-4 sm:font-bold sm:py-2 py-1 px-4 sm:px-6 rounded-lg">
-       ORDER NOW
-    </button>      
-  </div>
-  <img className="card-image" src="https://www.shadevelopers.com/wp-content/uploads/2023/03/coffee.webp" alt="" />
-</div>
-</div>
-
-<div className="flex justify-center   items-center  ">
-<div className= "card-box   ">
-  <div className="card-content   ">
-    <h2 className="text-[2.3rem] sm:text-start text-center font-extrabold  sm:text-[4rem]" >EXPLORE NEW FLAVOUR COFFEE</h2>
-    <p className="text-xl text-start  mx-[5rem] text-white sm:mx-0 max-w-[36rem]  " > Fresh Coffee is The Place Where You Can Find the Best Coffee in this Whole Towm !
-    We Highly Recommend to Visit This Coffee Shop With Your Family Members</p>
-
-    <h3 className="sm:text-[2rem]  text-[2rem] ml-[5rem]   mx-10 sm:mx-0  uppercase">Home Delivery Available</h3>
-
-    <button class="bg-white   ml-[5rem] text-[1.6rem] sm:text-[2rem]  font-medium   my-4 sm:font-bold sm:py-2 py-1 px-4 sm:px-6 rounded-lg">
-       ORDER NOW
-    </button>      
-  </div>
-  <img className="card-image" src="https://www.shadevelopers.com/wp-content/uploads/2023/03/coffee.webp" alt="" />
-</div>
-
-
-
-</div>
-
-</section> */
-
-
-
-
-
-
-
-
 .app__flex {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
-
-
-.app__wrapper {
-  flex: 1;
-  width: 100%;
-  flex-direction: column;
-  padding: 4rem 2rem;
+ 
 
  
-} 
-
-
-/* .app__container {
-  width: 100%;
-  min-height: 100vh;
-
-  display: flex;
-  flex-direction: row;
-}
-
-@media screen and (max-width: 450px) {
-  .app__wrapper {
-
-    padding: 4rem 1rem 2rem;
-  }
-} */

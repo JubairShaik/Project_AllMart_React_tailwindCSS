@@ -12,7 +12,6 @@ const Heading = () => {
      <>
      <section>
      
-     <div className="absolute w-[50%] h-[10%] inset-0 gradient-orange " />
      <motion.nav
      variants={navVariants}
      initial= "hidden" 

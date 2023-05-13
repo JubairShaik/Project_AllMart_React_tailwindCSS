@@ -14,8 +14,6 @@ function Banner({ title, text  }) {
     variants={navVariants}
     initial= "hidden" 
     whileInView="show"
-
-    
      className="banner">
       <div className="container   ">
         <div className="banner-container   ">
