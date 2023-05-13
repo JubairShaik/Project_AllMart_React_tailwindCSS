@@ -22,8 +22,7 @@ const SearchBar = () => {
 
   const handleSearch = () => {
     const filteredResults =  items.filter((item) =>
-      item.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.description.toLowerCase().includes(searchQuery.toLowerCase()) 
+       item.description.toLowerCase().includes(searchQuery.toLowerCase()) 
     );
     setSearchResults(filteredResults);
     console.log(setSearchResults)
@@ -43,7 +42,7 @@ const SearchBar = () => {
 
  
 
-    <div className="flex items-center  w-[100%] sm:w-[50%]  mx-[1ret] sm:mx-[5rem] justify-center">
+    <div className="flex items-center w-[50%]  mx-[5rem] justify-center">
     
     <input
     type="search"
@@ -52,12 +51,12 @@ const SearchBar = () => {
     onChange={handleInputChange}
     className="py-3 px-2 sm:px-5 sm:py-4 
     cursor-pointer text-orange-700 border
-     h-[4rem] w-[25rem]  sm:w-[30rem] font-Poppins text-[1.2rem] 
+     h-[4rem]  w-[30rem] font-Poppins text-[1.2rem] 
       sm:text-[2rem]    border-gray-300 rounded-md"
   />
 
   <button
-    onKeyPress={handleKeyPress} 
+   onKeyPress={handleKeyPress} 
     onClick={handleSearch}
     className="ml-2  px-4 p w-[10rem] text-[1.7rem] sm:text-[2.5rem] font-semibold  sm:w-[19rem]  h-[4rem] bg-orange-500 text-white rounded-md"
   >

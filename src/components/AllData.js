@@ -1,28 +1,3 @@
-// export const jsonData = [
-//   {
-//     id: 1,
-//     name: "Item 1",
-//     description: "This is item 1",
-//   },
-//   {
-//     id: 2,
-//     name: "Item 2",
-//     description: "This is item 2",
-//   },
-//   {
-//     id: 3,
-//     name: "Item 3",
-//     description: "This is item 3",
-//   },
-//   {
-//     id: 4,
-//     name: "Item 4",
-//     description: "This is item 4",
-//   },
-// ];
-
-
-
 
 import Img1 from "../img/products/1.webp";
 import Img2 from "../img/products/2.webp";
@@ -116,6 +91,10 @@ import TableLamp1 from "../img/products/otherProducts/tablelamp1.webp";
 import TableLamp2 from "../img/products/otherProducts/tablelamp2.webp";
 import MatLamp1 from "../img/products/otherProducts/mat1.webp";
 // vegitables
+
+
+
+
 import  tom from "../img/products/otherProducts/tom.jpg";
 import tom2 from "../img/products/otherProducts/tom2.webp";
 import  tom3 from "../img/products/otherProducts/tom3.jpg";
@@ -156,7 +135,9 @@ export const items = [
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
     img:  lady,
     description: "Ladys Finger",
-    price: 160,
+    price: 40,
+    actualPrice:50,
+    isVegetarian:true,
     otherImgs: [ lady,ladys],
     specs:
       "The Here Comes The Sun pendant designed by Bertrand Balas is a quality lamp with a unique and magical look. The Here Comes The Sun series has a fantastic expression and especially swhen turned on it creates a very special atmosphere in the room it hangs in. The lamp fits perfectly above both dining room table, kitchen counter, and as living room lighting . ",
@@ -169,7 +150,7 @@ export const items = [
     category: "vegetables",DeliveryTime: "30 mins",
     cuisines: [ "Carrots", "Vegitables","Vegetables","Food-Item" ],
     img:  maincarrot ,  
-
+    isVegetarian:true,
     description: "Ooty Carrot",
     price: 220,
     otherImgs: [carrots, carrot3],
@@ -183,7 +164,7 @@ export const items = [
     id: 13,
     category: "vegetables",DeliveryTime: "30 mins",
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+    isVegetarian:true,
     img:  tom2,
     description: "Tomato",
     price: 33,
@@ -197,11 +178,11 @@ export const items = [
   {
     id: 15,
     category: "vegetables",DeliveryTime: "30 mins",
-
+    isVegetarian:true,
 
     img:  on,  
       cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+      isVegetarian:true,
     description: "Onian",
     price: 330,
     otherImgs: [on1 ,on2  ],
@@ -223,7 +204,7 @@ export const items = [
     img: curd1,    
     rating:4.5,
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+    isVegetarian:true,
     description: "Special Curd Rice",
     price: 100,
     otherImgs: [Img1, curd2],
@@ -240,7 +221,7 @@ export const items = [
     rating:4.5,
     img: Img2,    
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    
+    isVegetarian:true,
     description: "Idly Vada Special",
     price: 45,
     otherImgs: [Idly, Idly2],
@@ -258,7 +239,7 @@ export const items = [
     DeliveryTime: "30 mins",
     rating:1.5,
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    
+    isVegetarian:true,
     description: "Indian Thali",
     price: 250,
     otherImgs: [ Thali1,Thali2],
@@ -272,7 +253,7 @@ export const items = [
     id: 4,
     category: "food",DeliveryTime: "30 mins",
     img:  Roti1,    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+    isVegetarian:true,
     description: "Chapthi ",
     price: 80,
     otherImgs: [Roti1, Roti1  ],
@@ -349,7 +330,8 @@ export const items = [
   {
     id: 14,
     category: " fruits",DeliveryTime: "30 mins",
-    img: Img14,    
+    img: Img14, 
+    isVegetarian:true,   
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
     description: "Oak Spanish Chair",
     price: 520,
@@ -367,7 +349,7 @@ export const items = [
     category: "fruits",DeliveryTime: "30 mins",
     img: Img16 ,    
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+    isVegetarian:true,
     description: "Fruits",
     price: 120,
     otherImgs: [Cam1, Cam2],
@@ -382,7 +364,7 @@ export const items = [
     id: 17,
     category: "fruits",DeliveryTime: "30 mins",
     img: Img17,    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+    isVegetarian:true,
     description: "Strawberries",
     price: 75,
     otherImgs: [TableLamp1, TableLamp2],
@@ -396,7 +378,7 @@ export const items = [
   {
     id: 18,
     category: "fruits",DeliveryTime: "30 mins",
-    img: Img18,
+    img: Img18,isVegetarian:true,
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
     description: "Mangoes",
     price: 175,
@@ -413,7 +395,7 @@ export const items = [
     category: "fruits",DeliveryTime: "30 mins",
     img: Kiwi,    
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+    isVegetarian:true,
     description: "Kiwi",
     price: 161,
     otherImgs: [Vase1, Vase2],
@@ -427,7 +409,7 @@ export const items = [
     id: 10,
     category: "fruits",DeliveryTime: "30 mins",
     img: Img14,    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+    isVegetarian:true,
     description:  "Nagpur Oranges",
     price: 89,
     otherImgs: [ChairBoom1, ChairBoom2],
@@ -443,7 +425,7 @@ export const items = [
     id: 56,
     category: "fruits",DeliveryTime: "30 mins",
     img: Apple,    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+    isVegetarian:true,
     description:  "Shimla Apple",
     price: 89,
     otherImgs: [ Apple,  Apple],
@@ -464,7 +446,7 @@ export const items = [
     category: "meat",DeliveryTime: "30 mins",
     img: Img19,    
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+    isVegetarian:false,
     description: "Family Chicken",
     price: 119,
     otherImgs: [chick1,chick2],
@@ -480,7 +462,7 @@ export const items = [
     category: "meat",DeliveryTime: "30 mins",
     img: Img20,    
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+    isVegetarian:false,
     description:  "Mutton",
     price: 45,
     otherImgs: [ bone1, bone2],
@@ -494,7 +476,8 @@ export const items = [
     id: 21,
     category: "meat" ,DeliveryTime: "30 mins",
     cuisines: [ "Desserts", "Ice Cream" ],
-    img: Img20r,     
+    img: Img20r,   
+    isVegetarian:false,  
     description:  "Mutton Bone Less",
     price: 45,
     otherImgs: [ mutton2 , mutton1 ],
@@ -509,7 +492,7 @@ export const items = [
     category: "meat",DeliveryTime: "30 mins",
     img: chickens,    
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+    isVegetarian:false,
     description:  "Chicken",
     price: 45,
     otherImgs: [chickens1, chickens2],

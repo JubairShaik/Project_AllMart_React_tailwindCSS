@@ -11,6 +11,7 @@ import  gift from "../img/gift.png";
 import  clock from "../img/clock.png";
 import AddToCartPopup from './AddToCartPopup';
 import Card from './Card';
+import VegetarianIndicator from './VegetarianIndicator';
 
 export const CartContext = createContext();
  
@@ -123,29 +124,34 @@ const truncatedDescription = showFullDescription ? productDescription : productD
             <div className="  product-right">
 
             <div className="flex   items-center justify-between">
-            <h3 className="  text-4xl  sm:text-4xl p-3 ">{item[0].description}</h3>
-            <div className="h-6 w-6   flex items-center justify-center  bg-red-300" >
-            <span className=" bg-red-500 p-1 rounded-full h-3 w-3"></span></div>
+            <h3 className="  text-5xl  font-Poppins sm:text-6xl p-3 ">{item[0].description}</h3>
+
+            <VegetarianIndicator isVegetarian={item[0].isVegetarian}/>
+           
             </div>
-            
-            <div>
+
+  
+           
+
+
+
+            <div className="flex flex-col justify-center items-center sm:items-start" >
 
  
 
-            <ul className="bg-red-200  p-2 flex-wrap justify-center items-center list-none gap-5 mt-2 flex w-23 it">
+            <ul className=" p-2 flex-wrap  list-none gap-4 mt-2 flex w-23 it">
                 {item[0].cuisines.map((cuisine, index) => (
-                 <li className="text-xl px-4 py-2 rounded-3xl text-slate-100 bg-slate-500" key={item[0].id}>{cuisine}</li>
+                 <li className="text-xl px-3 py-2 rounded-3xl text-white bg-orange-400" key={item[0].id}>{cuisine}</li>
               
               ))}
-          </ul>
+            </ul>
 
 
-            <button className="product-spec hover:text-blue-700" 
+            <button className="product-spec justify-center bg-orange-500   px-10 mx-1 rounded-full   text-white hover:text-slate-700" 
              onClick={() => setShowFullDescription(true)}> 
-          
                Click here for More Information
             </button>
-            <ReactModal className="p-10 flex items-center justify-center" isOpen={showFullDescription}>
+            <ReactModal className="p-5 flex items-center justify-center" isOpen={showFullDescription}>
               <div  className="bg-slate-500 rounded-3xl mt-[7rem] p-6 flex-col flex items-center justify-center"   >
                 <p className="p-5 sm:p-10 text-[2rem] sm:text-[4rem]" >{item[0].specs}</p>
              
@@ -155,16 +161,33 @@ const truncatedDescription = showFullDescription ? productDescription : productD
             
           </div>
 
-          <div className="bg-red-500 flex  flex-wrap items-center">
-          <p className="product-price "><span className="text-5xl">You Pay <span className="text-10xl">₹</span></span>{calcPrice(quantity)}</p><span className="strike">100</span>
-          <p className="text-2xl">(Inclusive of all taxes)</p>
-          </div>
-          <Card/>
-          <span className="bg-green-200 text-2xl text-green-500">You save ₹ 100</span>
+      
+          
 
+          <div className="font-Poppins  flex gap-4  flex-wrap items-center">
+          <p className="product-price  ">
+          <span className="text-5xl font-blinker ">
+          You Pay <span className="text-10xl ">₹</span>
+          </span>
+
+          {calcPrice(quantity)}</p>
+          <span className="strike text-red-500 ">{item[0].actualPrice}</span>
+          <p className="bg-green-300 text-[1.5rem] sm:text-[2rem] px-4  py-1 font-space rounded-2xl text-green-600" >you save {item[0].actualPrice -item[0].price }</p>
+          <p className="text-2xl font-space font-semibold">(Inclusive of all taxes)</p>
+          </div>
+
+
+
+         
+
+
+
+
+
+ 
               <div className="product-quant">
-                <p>Quantity</p>
-                <div className="product-btns">
+              <p>Quantity</p>
+              <div className="product-btns">
                   <button onClick={decrease}>-</button>
                   <p className="quantity">{quantity}</p>
                   <button onClick={increase}>+</button>
@@ -187,36 +210,12 @@ const truncatedDescription = showFullDescription ? productDescription : productD
             </div>
           </div>
                   <p>
-  Hover over this text to see a tooltip:
-  <span title="This is a tooltip">hover here</span>
+ 
+  
 </p>
 
-{/*
-// span[title] {
-//   position: relative;
-// }
-
-// span[title]::before {
-//   content: attr(title);
-//   position: absolute;
-//   background-color: black;
-//   color: white;
-//   padding: 4px;
-//   border-radius: 4px;
-//   font-size: 12px;
-//   white-space: nowrap;
-//   visibility: hidden;
-//   opacity: 0;
-//   transition: opacity 0.3s ease;
-// }
-
-// span[title]:hover::before {
-//   visibility: visible;
-//   opacity: 1;
-// }
-
-*/}
-
+ 
+ 
           <div className="specifications">
 
   

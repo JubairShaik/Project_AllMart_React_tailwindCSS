@@ -58,14 +58,15 @@
     width: 50%;
     height: 100%;
     background-color: #E5E5E5;
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 20px;
     padding: 4rem 5rem 8rem 5rem;
 }
 
 .product-spec {
-    font-size: 2.1rem;
-    margin-bottom: 5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
     line-height: 1.5;
 }
 
