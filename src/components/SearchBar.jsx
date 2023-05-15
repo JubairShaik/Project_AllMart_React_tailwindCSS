@@ -42,7 +42,7 @@ const SearchBar = () => {
 
  
 
-    <div className="flex items-center w-[70%]  mx-[3rem] justify-center">
+    <div className="flex items-center w-[86%]  mx-[2.1rem] justify-center">
     
     <input
     type="search"
@@ -51,7 +51,7 @@ const SearchBar = () => {
     onChange={handleInputChange}
     className="py-3 px-2 sm:px-5 sm:py-4 
     cursor-pointer text-orange-700 border
-     h-[4rem]    font-Poppins text-[1.65rem] 
+     h-[4rem]   w-[100%]  font-Poppins text-[1.65rem] 
       sm:text-[2rem]     border-gray-300 rounded-md"
      />
 

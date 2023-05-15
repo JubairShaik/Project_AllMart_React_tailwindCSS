@@ -88,12 +88,12 @@
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:470px) {
     .main-description {
         bottom: 1rem;
-        left: 0.5rem;
+        left: 0.8rem;
         font-size: 2rem;
-        color:rgb(243, 225, 191);
+        color:rgb(255, 255, 255);
         padding: 0px 7px ;
         border-radius: 5px;
         
@@ -104,7 +104,7 @@
     /* filter: blur(670px);  */
 }
 .featured img{
-    border-radius: 10px;
+    border-radius: 13.4px;
 }
 .home-container {
     padding-top: 2.5rem;
