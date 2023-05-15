@@ -13,7 +13,7 @@ function ProductItem() {
   return (
     <>
       {filteredItems.map((item) => (
-        <div key={item.id} className=" ">
+        <div key={item.id} className="my-5 ">
 
 
 
@@ -25,9 +25,9 @@ function ProductItem() {
 
           <div
           
-          className="flex CardStyles my-10  bg-red-5000 mx-2 px-1 rounded-[10px] bg-red00   flex-col items-center" >
+          className="flex CardStyles    mx-2 px-1 rounded-[10px] bg-red00   flex-col items-center" >
 
-          <div className=" relative w-[359px] mt-2 p-2 rounded-[13px]  h-[240px] sm:h-[220px]  ">
+          <div className=" relative w-[366px] mt-2 py-1   rounded-[13px]  h-[240px] sm:h-[220px]  ">
               <img src={item.img}  className="h-full  px-1    rounded-[18px] w-full object-cover
                hover:slale-110"   alt="product1" />
                <p className= "font-Poppins text-xl text-slate-300 bg-slate-600 absolute right-5  bottom-5  rounded-md px-3 py-1"> {item.DeliveryTime}</p>

@@ -247,8 +247,10 @@ html {
   .gradcolor6{
     @apply  bg-clip-text  text-transparent bg-gradient-to-b from-green-400 via-green-500 to-green-600       
   }
-  .sty{
-    @apply sm:p-[10rem] p-[1rem]  sm:my-[1rem] my-[7rem] ;
+  
+  
+  .gradcolor7{
+    @apply  bg-clip-text  text-transparent bg-gradient-to-tr from-orange-400 via-red-500 to-orange-600       
   }
  
    
