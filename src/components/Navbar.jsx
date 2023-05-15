@@ -2,7 +2,7 @@ import "./Navbar.css";
 import Logo from "../img/AllMart (1).png";
 import Logo2 from "../img/AllMart (2).png";
 import { Link } from "react-router-dom";
-import { useContext, useState,useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 import CartWithItems from "./CartWithItems";
 import EmptyCart from "./EmptyCart";
 import { CartContext } from "../pages/ProductPage";
@@ -127,7 +127,7 @@ function Navbar() {
       whileInView="show"
       // className={`${styles.xPaddings} py-8 relative`}
       style={{ backgroundColor: navbarColor}}
-      className={`z-[100] fixed  transition-all   mr-3 ml-1 h-[5.5rem] top-1 rounded-2xl sm:mx-4  w-[98%]`}
+      className={` z-10 fixed  transition-all   mr-3 ml-1 h-[5.5rem] top-5 rounded-2xl sm:mx-4  w-[96%]`}
       >
     
    
@@ -160,19 +160,23 @@ function Navbar() {
               <i
                 data-array-length={cartItem.length}
                 onClick={openCart}
-                className={`fa-solid fa-cart-shopping ${
-                  cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
-                }`}
+                className={`fa-solid fa-cart-shopping  
+                ${cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"}`}
               ></i>
             </div>
-            <div className="hamburger-menu">
+
+
+
+            <div className="hamburger-menu ">
               <i
                 data-array-length={cartItem.length}
+
                 onClick={openCart}
-                className={`fa-solid fa-cart-shopping hamburger-cart ${
+                className={`fa-solid fa-cart-shopping hamburger-cart    ${
                   cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
                 }`}
-              ></i>
+              >
+              </i>
               <i
                 onClick={() => setMobileNav(!mobileNav)}
                 className="fa-solid fa-bars hamburger-hamb"
@@ -189,5 +193,7 @@ function Navbar() {
 }
 
 export default Navbar;
+
+ 
 
  

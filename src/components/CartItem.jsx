@@ -37,23 +37,35 @@ function CartItem() {
   return (
     <>
       {cartItem.map((item, id) => (
-        <div key={id} className="cart-item">
-          <div className="cart-img">
-            <img src={item.img} alt="product" />
+        <div key={id} className=" bg-slate-200 p-3  rounded-sm leading-30 gap-3 sm:flex-row  flex-col  flex justify-between items-center">
+
+
+          <div className="h-[140px] sm:h-[150px] w-[250px] sm:w-[150px] ">
+            <img src={item.img}  className=" h-full w-full object-cover  rounded-[10px] flex-1   " alt="product" />
           </div>
-          <div className="cart-middle">
-            <p className="cart-name">{item.description}</p>
-            <div className="cart-btns">
+
+             <div className="flex items-center flex-col ">
+                 <p className="text-[2rem] font-Poppins">{item.description}</p>
+               <div className="cart-btns">
+
+
+
               <button onClick={decrease}>-</button>
-              <p className="quantity">{quantity}</p>
+              <p className=" rounded-xl">{quantity}</p>
               <button onClick={increase}>+</button>
+
             </div>
+
+
+
           </div>
-          <div className="cart-right">
-            <p className="cart-price">{calcPrice(quantity, item.price)}.00$</p>
+
+          <div className=" flex  sm:flex-col flex-row   items-center  sm:gap-[3rem] gap-[16rem]">
+
+            <p className=" text-[2.3rem]  font-Poppins ">{calcPrice(quantity, item.price)}.00 </p>
             <i
               onClick={() => removeFromCart(item.id)}
-              className="fa-sharp fa-solid fa-xmark"
+              className=" text-[3rem] fa-sharp fa-solid fa-xmark"
             ></i>
           </div>
         </div>

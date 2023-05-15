@@ -5,6 +5,8 @@ import { CartContext } from "../pages/ProductPage";
 import EmptyCart from "./EmptyCart";
 
 function CartWithItems() {
+
+  
   const { cartItem, setCartItem } = useContext(CartContext);
 
   const [totalPrice, setTotalPrice] = useState(0);
@@ -14,10 +16,15 @@ function CartWithItems() {
     setTotalPrice(newTotalPrice);
   }, [cartItem]);
 
+
+
+
   return (
     <>
-      <div className="full-cart-div">
+      <div className="full-cart-div   ">
         <div className="full-cart">
+
+
           {cartItem.map((item, id) =>
             cartItem.length !== 0 ? (
               <CartItem key={id} item={item} setCartItem={setCartItem} />
@@ -26,12 +33,19 @@ function CartWithItems() {
             )
           )}
         </div>
+
+
+
       </div>
-      <div className="subtotal-div">
-        <div className="sub-right">
+
+      <div className=" flex flex-col my-10 items-center">
+
+        <div className="text-[3rem] font-space font-bold   gap-[10rem] flex items-center  justify-between  ">
           <p>Subtotal</p>
-          <p className="total-price">{totalPrice + ".00$"}</p>
+          <p className="text-green-500">{totalPrice + "RS"}</p>
         </div>
+
+
         <div className="sub-left">
           <Link>Go to Checkout</Link>
         </div>
