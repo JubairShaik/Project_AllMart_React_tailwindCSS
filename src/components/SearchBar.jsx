@@ -42,7 +42,7 @@ const SearchBar = () => {
 
  
 
-    <div className="flex items-center w-[80%]  mx-[3rem] justify-center">
+    <div className="flex items-center w-[70%]  mx-[3rem] justify-center">
     
     <input
     type="search"
