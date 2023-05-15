@@ -1,15 +1,16 @@
-import CategoriesItemChairs from "./CategoriesItemChairs";
+import CategoriesItemVegs from "./CategoriesItemVegs";
 import Footer from "../Footer";
 import Newsletter from "../Newsletter";
+ 
 
-function Chairs() {
+function Vegetables() {
   return (
     <>
-      <CategoriesItemChairs />
+      <CategoriesItemVegs />
       <Newsletter />
       <Footer />
     </>
   );
 }
 
-export default Chairs;
+export default Vegetables;

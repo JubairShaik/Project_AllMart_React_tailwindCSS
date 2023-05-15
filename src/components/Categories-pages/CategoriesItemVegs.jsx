@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { items } from "../AllData";
 
 function CategoriesItem() {
-  const filteredItems = items.filter((item) => item.category === "meat");
+  const filteredItems = items.filter((item) => item.category === "vegetables");
   return (
     <>
-      <div className="sm:p-[10rem] p-[1rem]  sm:my-[1rem] my-[7rem]">
+      <div className="proud-container">
         <div className="container">
           <div className="products-grid">
             {filteredItems.map((item) => (
@@ -16,7 +16,7 @@ function CategoriesItem() {
                   </div>
                   <div className="product-details">
                     <p>{item.description}</p>
-                    <p className="item-price">{item.price}$</p>
+                    <p className="item-price">{item.price}RS</p>
                   </div>
                 </Link>
               </div>

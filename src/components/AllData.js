@@ -1,21 +1,15 @@
-
 import Img1 from "../img/products/1.webp";
 import Img2 from "../img/products/2.webp";
 import Img3 from "../img/products/3.webp";
- 
 import Img5 from "../img/products/5.jpg";
 import Img6 from "../img/products/6.jpg";
 import Img8 from "../img/products/Img8.avif";
 import Img9 from "../img/products/9.png";
 import Roti1 from "../img/products/Roti1.avif";
-
-
-
 import Img10 from "../img/products/10.jpg";
 import Img11 from "../img/products/11.jpg";
 import Img12 from "../img/products/12.png";
 import Img13 from "../img/products/13.jpg";
-
 import maincarrot from "../img/products/maincarrot.jpg";
 
 
@@ -61,40 +55,10 @@ import Burgur2 from "../img/products/otherProducts/Burgur2.avif";
 import Chicken from "../img/products/otherProducts/chicken.avif";
 import Chicken2 from "../img/products/otherProducts/chicken2.avif";
  
+  
 
-   
 
- 
- 
-import BodyOil1 from "../img/products/otherProducts/bodyoil1.jpg";
-import BodyOil2 from "../img/products/otherProducts/bodyoil2.jpg";
-
-import Shelf1 from "../img/products/otherProducts/shelf1.webp";
-import Shelf2 from "../img/products/otherProducts/shelf2.webp";
-import Vase1 from "../img/products/otherProducts/vase1.webp";
-import Vase2 from "../img/products/otherProducts/vase2.webp";
-import ChairBoom1 from "../img/products/otherProducts/chairboom1.webp";
-import ChairBoom2 from "../img/products/otherProducts/chairboom2.webp";
-import BlackLamp1 from "../img/products/otherProducts/blacklamp1.webp";
-import BlackLamp2 from "../img/products/otherProducts/blacklamp2.jpg";
-import GoldenLamp1 from "../img/products/otherProducts/goldenlamp1.webp";
-import GoldenLamp2 from "../img/products/otherProducts/goldenlamp2.webp";
-import Cotton1 from "../img/products/otherProducts/cotton1.jpg";
-import Cotton2 from "../img/products/otherProducts/cotton2.jpg";
-import WoodChair1 from "../img/products/otherProducts/woodchair1.webp";
-import WoodChair2 from "../img/products/otherProducts/woodchair2.webp";
-import Copenhagen1 from "../img/products/otherProducts/copenhagen1.webp";
-import Copenhagen2 from "../img/products/otherProducts/copenhagen2.webp";
-import Cam1 from "../img/products/otherProducts/cam1.webp";
-import Cam2 from "../img/products/otherProducts/cam2.jpg";
-import TableLamp1 from "../img/products/otherProducts/tablelamp1.webp";
-import TableLamp2 from "../img/products/otherProducts/tablelamp2.webp";
-import MatLamp1 from "../img/products/otherProducts/mat1.webp";
 // vegitables
-
-
-
-
 import  tom from "../img/products/otherProducts/tom.jpg";
 import tom2 from "../img/products/otherProducts/tom2.webp";
 import  tom3 from "../img/products/otherProducts/tom3.jpg";
@@ -119,13 +83,70 @@ import   chick1 from "../img/products/otherProducts/chick1.jpg";
 import   chick2  from "../img/products/otherProducts/chick2.jpg";
 
 
+//  Dairy 
+
+import eggs  from "../img/new/eggs.webp";
+import eggs2  from "../img/new/eggs2.webp";
+import fssai  from "../img/new/sai.jpeg";
+
+
+// Essentials 
+
+import beerShampoo1 from "../img/essentials/beershampo.webp";
+import beerShampoo2  from "../img/essentials/beershampo2.webp";
  
+
+
 
 
 
 
 export const items = [
+
+
+  // Home Essentials
+   {
+    id: 24,
+    category: "essentials",
+    cuisines: [ "Antibiotic free", "Rich in omega 3 ","Carefully selected "],
+    img: beerShampoo1 ,
+    description: " Park Avenue Beer Shampoo",
+    price: 422,
+    actualPrice:650,
+    isVegetarian:false,
+    otherImgs: [ beerShampoo2  , beerShampoo2 ],
+    specs: "This richly lathering shampoo is packed with Real Beer which has excellent conditioning properties. It has the goodness of Barley and hops which are rich in proteins and Vitamin B.",
+      texture: "50% off upto ₹100",
+      weight:  "Bhimavaram",
+      size: "  Deliver in 30 mins",
+  },
+
  
+  //  Dairy Items 
+
+
+  {
+    id: 23,
+    category: "dairy",
+    cuisines: [ "Antibiotic free", "Rich in omega 3 ","Carefully selected "],
+    img: eggs,
+    description: "Fresho Farm Eggs 6pcs",
+    price: 46,
+    actualPrice:65,
+    isVegetarian:false,
+    otherImgs: [ eggs2 , fssai],
+    specs: "Eggs are one of the common food items in most of the households. From breakfast to dinner, eggs are indulged in various ways. Poached, boiled, fried; we all have our own favourite choices. Not only are they delicious, but they are also crammed with health benefits. It is one of the most in-expensive sources of high protein. These are one of nature's most wholesome and cost-effective foods. An egg can give you a health kick in no time at all! It is the ideal ingredient to add to your child's breakfast for growth and development. ",
+      texture: "50% off upto ₹200",
+      weight:  "Bhimavaram",
+      size: "  Deliver in 60 mins",
+  },
+
+
+
+//
+
+
+
  
 //  Vegetable Section 
 
@@ -296,7 +317,8 @@ export const items = [
   },
   {
     id: 7,
-    category: "food",DeliveryTime: "30 mins",
+    category: "food",   
+    DeliveryTime: "30 mins",
     img: Img10,    
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
     description: "Indian Burgur",
@@ -335,7 +357,7 @@ export const items = [
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
     description: "Oak Spanish Chair",
     price: 520,
-    otherImgs: [WoodChair1, WoodChair2],
+    otherImgs: [Img14, Img14],
     specs:
       "When talking about Børge Mogensen, The Spanish Chair is probably one of the first designs you would think of, which makes good sense as it is also one of his most recognized products around the world.",
       texture: "50% off upto ₹200",
@@ -346,13 +368,14 @@ export const items = [
   },
   {
     id: 16,
-    category: "fruits",DeliveryTime: "30 mins",
+    category: "fruits",
+    DeliveryTime: "30 mins",
     img: Img16 ,    
     cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
     isVegetarian:true,
     description: "Fruits",
     price: 120,
-    otherImgs: [Cam1, Cam2],
+    otherImgs: [Img16, Img16],
     specs:
       "Easy Mini W75 from Antidark lives fully up to its name. Simple design, comfortable light, easy to adjust. The Easy Wall Light has made it easy for the user to handle, well, everything! The Easy lamp can turn 360 degrees and be tipped. An ideal lamp that can be placed in connection with other lamps to achieve light in all corners of the room. Furthermore, the lamp can work as a wall light or ceiling",
       texture: "50% off upto ₹200",
@@ -362,12 +385,13 @@ export const items = [
   },
   {
     id: 17,
-    category: "fruits",DeliveryTime: "30 mins",
+    category: "fruits",
+    DeliveryTime: "30 mins",
     img: Img17,    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
     isVegetarian:true,
     description: "Strawberries",
     price: 75,
-    otherImgs: [TableLamp1, TableLamp2],
+    otherImgs: [Img17, Img17],
     specs:
       "The lamp has also become popular in private homes and has especially made a comeback in recent years. This is not least due to the lamp's stylish design and the many color options that make it fit everywhere.",
       texture: "50% off upto ₹200",
@@ -398,7 +422,7 @@ export const items = [
     isVegetarian:true,
     description: "Kiwi",
     price: 161,
-    otherImgs: [Vase1, Vase2],
+    otherImgs: [Kiwi, Kiwi],
     specs:
       "Kubus Vase Lolo was originally designed by Søren Lassen in 2014, but was launched in connection with by Lassens 10 year anniversary 2018. The vase is a natural and sought-after extension of the series, which already counts the Kubus candlesticks and Kubus Bowl Bowl. Set it alone or in a still life, fill it with airy, colorful flowers for a feminine look or leave it alone in all its simplicity and precision.",
       texture: "40% off upto ₹300",
@@ -412,7 +436,7 @@ export const items = [
     isVegetarian:true,
     description:  "Nagpur Oranges",
     price: 89,
-    otherImgs: [ChairBoom1, ChairBoom2],
+    otherImgs: [Img14, Img14],
     specs:
       "Concept: &Tradition's Boomerang lounge chair is a classic Danish design with a modern and minimalist expression. The chair was designed by Hvidt & Mølgaard in 1956, and with its stylish cushions and hand-polished wooden frame, it is an ideal Nordic design that gives a personal mark to the home.",
     texture: "Wood",
@@ -503,3 +527,4 @@ export const items = [
       size: "  Deliver in 26 mins",
   },
 ];
+ 

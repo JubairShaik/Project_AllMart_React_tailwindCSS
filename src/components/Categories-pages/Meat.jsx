@@ -1,15 +1,15 @@
-import CategoriesItemKitchen from "./CategoriesItemKitchen";
+import CategoriesItemMeat from "./CategoriesItemMeat";
 import Footer from "../Footer";
 import Newsletter from "../Newsletter";
 
-function Kitchen() {
+function Meat() {
   return (
     <>
-      <CategoriesItemKitchen />
+      <CategoriesItemMeat />
       <Newsletter />
       <Footer />
     </>
   );
 }
 
-export default Kitchen;
+export default Meat;

@@ -1,15 +1,15 @@
-import CategoriesItemLamps from "./CategoriesItemLamps";
+import CategoriesItemDairy from "./CategoriesItemDairy";
 import Footer from "../Footer";
 import Newsletter from "../Newsletter";
 
-function Lamps() {
+function  Dairy() {
   return (
     <>
-      <CategoriesItemLamps />
+      <CategoriesItemDairy />
       <Newsletter />
       <Footer />
     </>
   );
 }
 
-export default Lamps;
+export default Dairy;

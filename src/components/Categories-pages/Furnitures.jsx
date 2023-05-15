@@ -1,11 +1,11 @@
-import CategoriesItemFurniture from "./CategoriesItemFurniture";
+import CategoriesItemFood from "./CategoriesItemFood";
 import Footer from "../Footer";
 import Newsletter from "../Newsletter";
 
 function Furnitures() {
   return (
     <>
-      <CategoriesItemFurniture />
+      <CategoriesItemFood />
       <Newsletter />
       <Footer />
     </>

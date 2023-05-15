@@ -1,4 +1,4 @@
-import EmptyCartImg from "../img/cart/empty-cart.png";
+import EmptyCartImg from "../img/empty-cart.png";
 
 function EmptyCart({ openCart }) {
   return (

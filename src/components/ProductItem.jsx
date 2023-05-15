@@ -8,7 +8,7 @@ import AppWrap from './../wrapper/AppWrap';
 
 function ProductItem() {
 
-  const filteredItems = items.filter((item) => item.id <= 14);
+  const filteredItems = items.filter((item) => item.id <= Math.max(item.id));
   
   return (
     <>

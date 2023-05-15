@@ -1,15 +1,15 @@
-import CategoriesItemSkinCare from "./CategoriesItemSkinCare";
+import CategoriesItemEssentials from "./CategoriesItemEssentials";
 import Footer from "../Footer";
 import Newsletter from "../Newsletter";
 
-function SkinCare() {
+function Vegs() {
   return (
     <>
-      <CategoriesItemSkinCare />
+      <CategoriesItemEssentials />
       <Newsletter />
       <Footer />
     </>
   );
 }
 
-export default SkinCare;
+export default Vegs;

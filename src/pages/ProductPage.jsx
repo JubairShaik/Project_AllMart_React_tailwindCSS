@@ -174,17 +174,7 @@ const truncatedDescription = showFullDescription ? productDescription : productD
           <span className="strike text-red-500 ">{item[0].actualPrice}</span>
           <p className="bg-green-300 text-[1.5rem] sm:text-[2rem] px-4  py-1 font-space rounded-2xl text-green-600" >you save {item[0].actualPrice -item[0].price }</p>
           <p className="text-2xl font-space font-semibold">(Inclusive of all taxes)</p>
-          </div>
-
-
-
-         
-
-
-
-
-
- 
+          </div> 
               <div className="product-quant">
               <p>Quantity</p>
               <div className="product-btns">

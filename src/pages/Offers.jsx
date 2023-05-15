@@ -3,7 +3,7 @@ import { Outlet} from "react-router-dom"
 import Slider from './../components/Slider';
 import Newsletter from './../components/Newsletter';
 import BannerReverse from './../components/BannerReverse';
-import Banner2 from "../img/banner/banner2.jpg";
+ 
 import  berry from "../img/products/berry.png";
 
 
@@ -78,7 +78,7 @@ const Offers  = () => {
   <BannerReverse
     title=" Fastest Home Delivery "
     text=" RAOUF Products are all made to standard sizes so that you can mix and match them freely."
-    img={Banner2}
+    
   />
 
   <h2 className=" text-[5rem] sm:text-[10rem] font-bold  text-center text-black myShadow">AllMart</h2>
