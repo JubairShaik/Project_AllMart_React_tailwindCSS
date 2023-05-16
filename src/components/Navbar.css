@@ -2,8 +2,8 @@
 
 
 .navcolor{
-    background: rgb(238,121,3);
-    background: radial-gradient(circle, rgba(238,121,3,1) 24%, rgba(208,54,54,1) 55%, rgba(224,94,51,1) 91%);
+    background: rgb(249, 126, 3);
+    background: radial-gradient(circle, rgb(246, 131, 16) 24%, rgba(208,54,54,1) 55%, rgba(224,94,51,1) 91%);
 
 }
 
@@ -180,15 +180,15 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.7rem;
 }
 
 .full-cart-div {
     overflow-y: scroll;
     
-    height: 60%;
+    height: 70%;
     margin-top: 3rem;
-    margin-right: -.6rem;
+    margin-right: -.5rem;
     
 }
 
@@ -225,17 +225,10 @@
     padding: 1.5rem;
 }
 
-.cart-btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-}
+ 
 
 
-
-.cart-btns button {
+ .orangebutton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -397,9 +390,7 @@
         
     }
 
-    .full-cart {
-        align-items: center;
-    }
+   
 
     .cart-middle {
         align-items: center;

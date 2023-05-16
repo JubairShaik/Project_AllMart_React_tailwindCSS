@@ -12,6 +12,7 @@ import clock from "../img/clock.png";
 import AddToCartPopup from "./AddToCartPopup";
 import Card from "./Card";
 import VegetarianIndicator from "./VegetarianIndicator";
+import Pricetag from './../components/Pricetag';
 
 export const CartContext = createContext();
 
@@ -28,10 +29,8 @@ function ProductPage() {
  
   const [showFullDescription, setShowFullDescription] = useState(false);
 
-
-   
-
   const { id } = useParams();
+
   const item = items.filter((item) => item.id === parseInt(id));
 
   const [quantity, setQuantity] = useState(1);
@@ -42,25 +41,6 @@ function ProductPage() {
   const changeImage = (e) => {
     setImage(e.target.src);
   };
-
-  const increase = () => {
-    if (quantity >= 1) {
-      setQuantity(quantity + 1);
-    }
-  };
-
-  const decrease = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
-
-  const calcPrice = (quantity) => {
-    return quantity * item[0].price;
-  };
-
-
-
 
   const [notify, setNotify] = useState(false);
 
@@ -153,32 +133,8 @@ function ProductPage() {
                 </ReactModal>
               </div>
 
-              <div className="font-Poppins  flex gap-4  flex-wrap items-center">
-                <p className="product-price  ">
-                  <span className="text-5xl font-blinker ">
-                    You Pay <span className="text-10xl ">₹</span>
-                  </span>
-
-                  {calcPrice(quantity)}
-                </p>
-                <span className="strike text-red-500 ">
-                  {item[0].actualPrice}
-                </span>
-                <p className="bg-green-300 text-[1.5rem] sm:text-[2rem] px-4  py-1 font-space rounded-2xl text-green-600">
-                  you save {item[0].actualPrice - item[0].price}
-                </p>
-                <p className="text-2xl font-space font-semibold">
-                  (Inclusive of all taxes)
-                </p>
-              </div>
-              <div className="product-quant">
-                <p>Quantity</p>
-                <div className="product-btns">
-                  <button onClick={decrease}>-</button>
-                  <p className="quantity">{quantity}</p>
-                  <button onClick={increase}>+</button>
-                </div>
-              </div>
+                  {/*!Component*/}
+              <Pricetag item={item} />
 
               <div>
             </div>

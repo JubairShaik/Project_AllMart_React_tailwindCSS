@@ -1,5 +1,4 @@
 import "./Header.css";
- 
 
 import { Link } from "react-router-dom";
 import Img13 from "../img/products/13.jpg";
@@ -17,13 +16,8 @@ function Hero() {
       className="home-container ">
         <div className="container">
           <div className="grid-container">
-
-
             <div 
-
-
             className="featured grayscale-0  grid-one">
-
               <Link to="categories/groceries">
 
                 <div id="img1" className="lil-overlay"></div>
@@ -32,9 +26,6 @@ function Hero() {
                 <p className="main-description  font-space ">GROCERY & STAPLES</p>
               </Link>
             </div>
-
-
-
             <div className="featured grid-two">
               <Link to="categories/vegetables">
                 <div id="img2" className="lil-overlay"></div>
@@ -42,8 +33,6 @@ function Hero() {
                 <p className="  main-description capitalize ">HOME ESSENSIALS</p>
               </Link>
             </div>
-
-
             <div className="featured grid-four">
               <Link to="categories/kitchen">
                 <div id="img3" className="lil-overlay"></div>
@@ -51,8 +40,6 @@ function Hero() {
                 <p className="main-description">DAIRY & FROZEN</p>
               </Link>
             </div>
-
-
             <div className="featured grid-four-low">
               <Link to="categories/fruits">
                 <div id="img4" className="lil-overlay"></div>
@@ -60,8 +47,6 @@ function Hero() {
                 <p className="main-description">Fruits</p>
               </Link>
             </div>
-
-            
           </div>
         </div>
       </motion.div>

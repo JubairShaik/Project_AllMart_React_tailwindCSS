@@ -263,7 +263,7 @@ html {
 .card-box img {
   width: 500px;
   height: auto;
-  filter: drop-shadow(10px 10px 30px #00000049);
+  filter: drop-shadow(10px 10px 30px #ad850149);
   transition: all 0.75s ease-in-out;
 }
 
@@ -342,11 +342,11 @@ html {
 }  
 
 
-@media (max-width: 390px) {
+@media (max-width: 440px) {
   
   .card-box {
-    margin: 10rem 2rem;
-    padding: 80px;
+    margin: 5rem 2.5rem;
+    padding: 110px;
     border-radius: 20px;
     width: 450px;
     height: 740px;
@@ -354,7 +354,7 @@ html {
     transition: all 0.5s ease-in-out;
     overflow: hidden;
     display: flex;
-    background: #ce1818;
+    background: #bb7401;
     align-items: center;
     flex-direction: column;
     justify-content: center;

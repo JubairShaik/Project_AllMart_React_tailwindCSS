@@ -18,13 +18,10 @@ function CartWithItems() {
 
 
 
-
   return (
     <>
       <div className="full-cart-div   ">
-        <div className="full-cart">
-
-
+        <div className=" flex items-center flex-col  gap-[1.8rem]">
           {cartItem.map((item, id) =>
             cartItem.length !== 0 ? (
               <CartItem key={id} item={item} setCartItem={setCartItem} />
@@ -33,19 +30,15 @@ function CartWithItems() {
             )
           )}
         </div>
-
-
-
       </div>
 
-      <div className=" flex flex-col my-10 items-center">
 
+      
+      <div className=" flex flex-col my-10 items-center">
         <div className="text-[3rem] font-space font-bold   gap-[10rem] flex items-center  justify-between  ">
           <p>Subtotal</p>
-          <p className="text-green-500">{totalPrice + "RS"}</p>
+          <p className="text-green-500">{totalPrice + "₹"}</p>
         </div>
-
-
         <div className="sub-left">
           <Link>Go to Checkout</Link>
         </div>
