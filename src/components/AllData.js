@@ -1,530 +1,527 @@
-import Img1 from "../img/products/1.webp";
-import Img2 from "../img/products/2.webp";
-import Img3 from "../img/products/3.webp";
-import Img5 from "../img/products/5.jpg";
-import Img6 from "../img/products/6.jpg";
-import Img8 from "../img/products/Img8.avif";
-import Img9 from "../img/products/9.png";
-import Roti1 from "../img/products/Roti1.avif";
-import Img10 from "../img/products/10.jpg";
-import Img11 from "../img/products/11.jpg";
-import Img12 from "../img/products/12.png";
-import Img13 from "../img/products/13.jpg";
-import maincarrot from "../img/products/maincarrot.jpg";
+import {
+  Img1,
+  Img2,
+  Img3,
+  Img5,
+  Img6,
+  Img8,
+  Img9,
+  Roti1,
+  Img10,
+  Img11,
+  Img12,
+  Img13,
+  maincarrot,
+  Kiwi,
+  Img14,
+  Img15,
+  Img16,
+  Img17,
+  Apple,
+  Img18,
+  Img19,
+  chickens,
+  Img20,
+  Img20r,
+  curd1,
+  curd2,
+  Idly,
+  Idly2,
+  Thali,
+  Thali1,
+  Thali2,
+  Shawrma1,
+  Shawrma2,
+  Burgur,
+  Burgur2,
+  Chicken,
+  Chicken2,
+  tom,
+  tom2,
+  tom3,
+  on,
+  on2,
+  on1,
+  carrot3,
+  carrots,
+  chicken,
+  chicken2,
+  carrot,
+  lady,
+  ladys,
+  bone1,
+  bone2,
+  mutton1,
+  mutton2,
+  chickens1,
+  chickens2,
+  chick1,
+  chick2
+} from "../img/index";
 
 
-// Fruits 
 
-import Kiwi from "../img/products/kiwi.webp";
-import Img14 from "../img/products/14.jpg";
-import Img15 from "../img/products/15.jpg";
-import Img16 from "../img/products/16.webp";
-import Img17 from "../img/products/17.jpg";
+//  Dairy
 
-import Apple from "../img/products/apple.png";
+import eggs from "../img/new/eggs.webp";
+import eggs2 from "../img/new/eggs2.webp";
+import fssai from "../img/new/sai.jpeg";
 
-
-// meat 
-import Img18 from "../img/products/17.webp";
-import Img19 from "../img/products/19.jpg";
-import chickens from "../img/products/18.jpg";
-import Img20 from "../img/products/20.jpg";
-import Img20r from "../img/products/20r.jpg";
-
-
-
-
-
-
-import curd1 from "../img/products/otherProducts/curd1.jpg";
-import curd2 from "../img/products/otherProducts/curd2.jpg";
- 
-import Idly from "../img/products/otherProducts/Idly1.avif";
-import Idly2 from "../img/products/otherProducts/idly2.avif";
-
-import Thali  from "../img/products/otherProducts/Thali.avif";
-import Thali1  from "../img/products/otherProducts/Thali1.avif";
-import Thali2 from "../img/products/otherProducts/Thali2.avif";
-
-import Shawrma1 from "../img/products/otherProducts/Shawrma.avif";
-import Shawrma2 from "../img/products/otherProducts/Shawrma2.avif";
-
-import Burgur from "../img/products/otherProducts/Burgur.avif";
-import Burgur2 from "../img/products/otherProducts/Burgur2.avif";
-
-import Chicken from "../img/products/otherProducts/chicken.avif";
-import Chicken2 from "../img/products/otherProducts/chicken2.avif";
- 
-  
-
-
-// vegitables
-import  tom from "../img/products/otherProducts/tom.jpg";
-import tom2 from "../img/products/otherProducts/tom2.webp";
-import  tom3 from "../img/products/otherProducts/tom3.jpg";
-import  on from "../img/products/otherProducts/on.jpg";
-import on2 from "../img/products/otherProducts/on2.webp";
-import  on1 from "../img/products/otherProducts/on1.jpg";
-import carrot3 from "../img/products/otherProducts/carrot3.jpg";
-import carrots from "../img/products/otherProducts/carrot.webp";
-import chicken from "../img/products/otherProducts/chicken.avif";
-import chicken2 from "../img/products/otherProducts/chicken2.avif";
-import  carrot from "../img/products/otherProducts/carrot.webp";
-import  lady from "../img/products/otherProducts/lady2.webp";
-import  ladys from "../img/products/otherProducts/lady.webp";
-// Chicken Section 
-import  bone1 from "../img/products/otherProducts/bone.webp";
-import  bone2 from "../img/products/otherProducts/bone2.jpg";
-import  mutton1 from "../img/products/otherProducts/mutton1.webp";
-import  mutton2 from "../img/products/otherProducts/mutton2.webp";
-import   chickens1 from "../img/products/otherProducts/ch1.jpg";
-import   chickens2 from "../img/products/otherProducts/ch2.jpg";
-import   chick1 from "../img/products/otherProducts/chick1.jpg";
-import   chick2  from "../img/products/otherProducts/chick2.jpg";
-
-
-//  Dairy 
-
-import eggs  from "../img/new/eggs.webp";
-import eggs2  from "../img/new/eggs2.webp";
-import fssai  from "../img/new/sai.jpeg";
-
-
-// Essentials 
+// Essentials
 
 import beerShampoo1 from "../img/essentials/beershampo.webp";
-import beerShampoo2  from "../img/essentials/beershampo2.webp";
- 
-
-
-
-
-
+import beerShampoo2 from "../img/essentials/beershampo2.webp";
 
 export const items = [
-
-
   // Home Essentials
-   {
+  {
     id: 24,
     category: "essentials",
-    cuisines: [ "Antibiotic free", "Rich in omega 3 ","Carefully selected "],
-    img: beerShampoo1 ,
+    cuisines: ["Antibiotic free", "Rich in omega 3 ", "Carefully selected "],
+    img: beerShampoo1,
     description: " Park Avenue Beer Shampoo",
     price: 422,
-    actualPrice:650,
-    isVegetarian:false,
-    otherImgs: [ beerShampoo2  , beerShampoo2 ],
-    specs: "This richly lathering shampoo is packed with Real Beer which has excellent conditioning properties. It has the goodness of Barley and hops which are rich in proteins and Vitamin B.",
-      texture: "50% off upto ₹100",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 30 mins",
+    actualPrice: 650,
+    isVegetarian: false,
+    otherImgs: [beerShampoo2, beerShampoo2],
+    specs:
+      "This richly lathering shampoo is packed with Real Beer which has excellent conditioning properties. It has the goodness of Barley and hops which are rich in proteins and Vitamin B.",
+    texture: "50% off upto ₹100",
+    weight: "Bhimavaram",
+    size: "  Deliver in 30 mins",
   },
 
- 
-  //  Dairy Items 
-
+  //  Dairy Items
 
   {
     id: 23,
     category: "dairy",
-    cuisines: [ "Antibiotic free", "Rich in omega 3 ","Carefully selected "],
+    cuisines: ["Antibiotic free", "Rich in omega 3 ", "Carefully selected "],
     img: eggs,
     description: "Fresho Farm Eggs 6pcs",
     price: 46,
-    actualPrice:65,
-    isVegetarian:false,
-    otherImgs: [ eggs2 , fssai],
-    specs: "Eggs are one of the common food items in most of the households. From breakfast to dinner, eggs are indulged in various ways. Poached, boiled, fried; we all have our own favourite choices. Not only are they delicious, but they are also crammed with health benefits. It is one of the most in-expensive sources of high protein. These are one of nature's most wholesome and cost-effective foods. An egg can give you a health kick in no time at all! It is the ideal ingredient to add to your child's breakfast for growth and development. ",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 60 mins",
+    actualPrice: 65,
+    isVegetarian: false,
+    otherImgs: [eggs2, fssai],
+    specs:
+      "Eggs are one of the common food items in most of the households. From breakfast to dinner, eggs are indulged in various ways. Poached, boiled, fried; we all have our own favourite choices. Not only are they delicious, but they are also crammed with health benefits. It is one of the most in-expensive sources of high protein. These are one of nature's most wholesome and cost-effective foods. An egg can give you a health kick in no time at all! It is the ideal ingredient to add to your child's breakfast for growth and development. ",
+    texture: "50% off upto ₹200",
+    weight: "Bhimavaram",
+    size: "  Deliver in 60 mins",
   },
 
+  //
 
-
-//
-
-
-
- 
-//  Vegetable Section 
+  //  Vegetable Section
 
   {
     id: 11,
     category: "vegetables",
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    img:  lady,
+    cuisines: ["Desserts", "Ice Cream", "Vegetables", "Food-Item"],
+    img: lady,
     description: "Ladys Finger",
     price: 40,
-    actualPrice:50,
-    isVegetarian:true,
-    otherImgs: [ lady,ladys],
+    actualPrice: 50,
+    isVegetarian: true,
+    otherImgs: [lady, ladys],
     specs:
       "The Here Comes The Sun pendant designed by Bertrand Balas is a quality lamp with a unique and magical look. The Here Comes The Sun series has a fantastic expression and especially swhen turned on it creates a very special atmosphere in the room it hangs in. The lamp fits perfectly above both dining room table, kitchen counter, and as living room lighting . ",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
-  },
-  {
-    id: 12,
-    category: "vegetables",DeliveryTime: "30 mins",
-    cuisines: [ "Carrots", "Vegitables","Vegetables","Food-Item" ],
-    img:  maincarrot ,  
-    isVegetarian:true,
-    description: "Ooty Carrot",
-    price: 220,
-    otherImgs: [carrots, carrot3],
-    specs:
-      "Verner Panton Flowerpot, designed in 1968, was originally meant for the hospitality industry and Verner Panton displays and showrooms. The lamp then became popular in private homes, and due to its stylish design and many colour choices, it has made a major comeback in recent years.",
-    texture: "60% off upto ₹200",
-    weight:  "Bhimavaram",
+    texture: "50% off upto ₹200",
+    weight: "Bhimavaram",
     size: "  Deliver in 26 mins",
   },
   {
+    id: 12,
+    category: "vegetables",
+    DeliveryTime: "30 mins",
+    cuisines: ["Carrots", "Vegetables"],
+    img: maincarrot,
+    isVegetarian: true,
+    description: "Ooty Carrot",
+    price: 220,
+    actualPrice: 200,
+    otherImgs: [carrots, carrot3],
+    specs:
+      "Ooty Carrot is a premium variety of carrots grown in the pristine hills of Ooty. Known for its vibrant orange color and sweet flavor, Ooty Carrot is a favorite among carrot lovers. It is rich in beta-carotene, vitamin A, and dietary fiber, making it a nutritious addition to your meals. Use Ooty Carrot in salads, stir-fries, or as a healthy snack option.",
+    texture: "Crunchy and sweet",
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
+  },
+  {
     id: 13,
-    category: "vegetables",DeliveryTime: "30 mins",
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:true,
-    img:  tom2,
+    category: "vegetables",
+    DeliveryTime: "30 mins",
+    cuisines: ["Desserts", "Ice Cream", "Vegetables", "Food-Item"],
+    isVegetarian: true,
+    img: tom2,
     description: "Tomato",
     price: 33,
+    actualPrice: 30,
     otherImgs: [tom, tom3],
     specs:
-      "Cotton pads made from soft, unbleached cotton. These are made in Japan and made from 100% cotton.",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
+      "Tomato is a versatile and essential vegetable in many cuisines. It is known for its vibrant red color, juicy texture, and tangy flavor. Tomatoes are rich in vitamins A and C, antioxidants, and other beneficial nutrients. They are commonly used in salads, sauces, soups, and various cooked dishes. Enjoy the freshness and taste of tomatoes in your favorite recipes.",
+    texture: "Juicy and tangy",
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
   {
     id: 15,
-    category: "vegetables",DeliveryTime: "30 mins",
-    isVegetarian:true,
-
-    img:  on,  
-      cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-      isVegetarian:true,
-    description: "Onian",
+    category: "vegetables",
+    DeliveryTime: "30 mins",
+    isVegetarian: true,
+    img: on,
+    cuisines: ["Desserts", "Ice Cream", "Vegetables", "Food-Item"],
+    isVegetarian: true,
+    description: "Onion",
     price: 330,
-    otherImgs: [on1 ,on2  ],
+    actualPrice: 300,
+    otherImgs: [on1, on2],
     specs:
-      "Concept: The Hyg series by Danish Normann Copenhagen is a series of chairs based on the Danish word Hygge. The designer Simon Legald has tried to embody the meaning of the word around security, warmth and convenience in a furniture series. This is expression in the fine organic shapes and hearty curves that provide a high degree of sitting comfort and well-being in the chairs. ",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
-
+      "Onion is a versatile vegetable used in various culinary preparations. It adds flavor and aroma to dishes and can be enjoyed raw or cooked. Onions come in different varieties, each with its own distinct taste and texture. They are rich in antioxidants and have health benefits. Incorporate onions into your recipes to enhance their taste and nutritional value.",
+    texture: "Crunchy and flavorful",
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
-
-
-
   // Food Items  ?
 
   {
     id: 1,
-    category: "food",DeliveryTime: "30 mins",
-    img: curd1,    
-    rating:4.5,
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:true,
+    category: "food",
+    DeliveryTime: "30 mins",
+    img: curd1,
+    rating: 4.5,
+    cuisines: ["Desserts", "Ice Cream", "Vegetables", "Food-Item"],
+    isVegetarian: true,
     description: "Special Curd Rice",
     price: 100,
+    actualPrice: 120,
     otherImgs: [Img1, curd2],
     specs:
-    "This Crud Rice is a hearty and flavorful dish that combines rice with a variety of ingredients to create a satisfying meal. The dish typically includes ground beef, onions, and garlic, along with diced tomatoes and spices like cumin and paprika. Whether you're looking for a quick and easy lunch or a satisfying dinner, Crud Rice is sure to hit the spot.",
+      "This Curd Rice is a hearty and flavorful dish that combines rice with a variety of ingredients to create a satisfying meal. The dish typically includes yogurt, cooked rice, and tempered with spices like mustard seeds, curry leaves, and asafoetida. Whether you're looking for a quick and refreshing meal or a comforting side dish, Curd Rice is sure to hit the spot.",
     texture: "50% off upto ₹200",
-    weight:  "Bhimavaram",
-    size: "  Deliver in 26 mins",
-
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
   {
     id: 2,
-    category: "food",DeliveryTime: "30 mins",
-    rating:4.5,
-    img: Img2,    
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:true,
+    category: "food",
+    DeliveryTime: "30 mins",
+    rating: 4.5,
+    img: Img2,
+    cuisines: ["Desserts", "Ice Cream", "Vegetables", "Food-Item"],
+    isVegetarian: true,
     description: "Idly Vada Special",
     price: 45,
+    actualPrice: 60,
     otherImgs: [Idly, Idly2],
     specs:
-    " Idly and vada are two popular South Indian breakfast dishes. Idly is a soft, steamed rice cake made from fermented batter, while vada is a crispy, savory doughnut-shaped fritter made from lentil batter. They are often served together, along with chutneys and sambar, a lentil-based soup.",
+      "Idly and vada are two popular South Indian breakfast dishes. Idly is a soft, steamed rice cake made from fermented batter, while vada is a crispy, savory doughnut-shaped fritter made from lentil batter. They are often served together, along with chutneys and sambar, a lentil-based soup. Enjoy this classic combination for a wholesome and delicious breakfast.",
     texture: "50% off upto ₹200",
-    weight:  "Bhimavaram",
-    size: "  Deliver in 26 mins",
-    
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
   {
     id: 3,
-    category: "food",DeliveryTime: "30 mins",
-    img: Thali,
+    category: "food",
     DeliveryTime: "30 mins",
-    rating:1.5,
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:true,
+    img: Thali,
+    rating: 1.5,
+    cuisines: ["Desserts", "Ice Cream", "Vegetables", "Food-Item"],
+    isVegetarian: true,
     description: "Indian Thali",
     price: 250,
-    otherImgs: [ Thali1,Thali2],
+    actualPrice: 300,
+    otherImgs: [Thali1, Thali2],
     specs:
       "Indian thali is a traditional meal served on a large platter, consisting of a variety of dishes, often including rice, bread, curries, vegetables, dal, yogurt, chutney, and dessert. It is a complete and balanced meal that offers a range of flavors, textures, and nutrients. Thalis vary from region to region in India, reflecting the local cuisine and culture.",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
+    texture: "50% off upto ₹200",
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
   {
     id: 4,
-    category: "food",DeliveryTime: "30 mins",
-    img:  Roti1,    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:true,
-    description: "Chapthi ",
+    category: "food",
+    DeliveryTime: "30 mins",
+    img: Roti1,
+    cuisines: ["Desserts", "Ice Cream", "Vegetables", "Food-Item"],
+    isVegetarian: true,
+    description: "Chapati",
     price: 80,
-    otherImgs: [Roti1, Roti1  ],
+    actualPrice: 100,
+    otherImgs: [Roti1, Roti1],
     specs:
-      "Chapati is a staple flatbread in Indian cuisine, made from whole wheat flour, water, and salt. It is typically cooked on a tawa, a flat griddle, and served hot with a variety of curries, vegetables, and lentils. Chapatis are an essential part of the Indian diet and are often eaten for breakfast, lunch, and dinner.",
-      texture:  "Free Delivery",
-      weight: "  Bhimavram",
-      size: "  Deliver in 20mins",
-
+      "Chapati is a staple flatbread in Indian cuisine, made from whole wheat flour, water, and salt. It is typically cooked on a tawa, a flat griddle, and served hot with a variety of curries, vegetables, and lentils. Chapatis are an essential part of the Indian diet and are often eaten for breakfast, lunch, and dinner. Enjoy the soft and fluffy texture of freshly made chapatis.",
+    texture: "Free Delivery",
+    weight: "Bhimavaram",
+    size: "Deliver in 20 mins",
   },
   {
     id: 5,
-    category: "food",DeliveryTime: "30 mins",
+    category: "food",
+    DeliveryTime: "30 mins",
     img: Img5,
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
+    cuisines: ["Desserts", "Ice Cream", "Vegetables", "Food-Item"],
     description: "Roti",
     price: 189,
-    otherImgs: [Roti1,  Roti1 ],
+    actualPrice: 200,
+    otherImgs: [Roti1, Roti1],
     specs:
-    "Roti is a staple flatbread in Indian cuisine, made from whole wheat flour, water, and salt. It is typically cooked on a tawa, a flat griddle, and served hot with a variety of curries, vegetables, and lentils. Chapatis are an essential part of the Indian diet and are often eaten for breakfast, lunch, and dinner.",
-      texture: "Plastic",
+      "Roti is a staple flatbread in Indian cuisine, made from whole wheat flour, water, and salt. It is typically cooked on a tawa, a flat griddle, and served hot with a variety of curries, vegetables, and lentils. Roti is a versatile bread that complements a wide range of dishes and adds a wholesome element to your meal.",
+    texture: "Plastic",
     weight: "3kg",
     size: "20cm x 20cm",
   },
   {
     id: 6,
-    category: "food",DeliveryTime: "30 mins",
-    img: Img13,    
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-
-    description: " Chicken Shwarma",
+    category: "food",
+    DeliveryTime: "30 mins",
+    img: Img13,
+    cuisines: ["Desserts", "Ice Cream", "Vegetables", "Food-Item"],
+    description: "Chicken Shawarma",
     price: 200,
-    otherImgs: [Shawrma2,Shawrma1],
+    actualPrice: 250,
+    otherImgs: [Shawrma2, Shawrma1],
     specs:
       "Chicken shawarma is a Middle Eastern dish made from marinated chicken that is slowly roasted on a spit and shaved off as it cooks. The chicken is typically served in a pita bread with a variety of accompaniments, such as tomatoes, lettuce, onions, pickles, and tahini sauce. Chicken shawarma is a flavorful and satisfying meal that is popular around the world.",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
+    texture: "50% off upto ₹200",
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
   {
     id: 7,
-    category: "food",   
+    category: "food",
     DeliveryTime: "30 mins",
-    img: Img10,    
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    description: "Indian Burgur",
+    img: Img10,
+    cuisines: ["Desserts", "Ice Cream", "Vegetables", "Food-Item"],
+    description: "Indian Burger",
     price: 220,
+    actualPrice: 270,
     otherImgs: [Burgur, Burgur2],
     specs:
-      " Burgers are often accompanied by fries and a drink, and are enjoyed in many variations including vegetarian or with alternative meats like chicken or fish. They are a convenient and ubiquitous meal that can be found in many restaurants and fast food chains worldwide.",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
-
+      "Burgers are a popular fast food item enjoyed worldwide. They consist of a grilled or fried patty made from ground meat or plant-based ingredients, placed inside a bun, and topped with various ingredients such as lettuce, tomatoes, cheese, onions, and sauces. Indian burgers often incorporate spices and flavors inspired by the local cuisine, creating a unique twist on this classic dish.",
+    texture: "50% off upto ₹200",
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
   {
     id: 8,
-    category: "food",DeliveryTime: "30 mins",
+    category: "food",
+    DeliveryTime: "30 mins",
     img: Img8,
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    description: "Special Chicken",
+    cuisines: ["Desserts", "Ice Cream", "Vegetables", "Food-Item"],
+    description: "Special Chicken Curry",
     price: 115,
-    otherImgs: [chicken, chicken2],
+
+    actualPrice: 150,
+    otherImgs: [Chicken, Chicken2],
     specs:
-      "Chicken curry is a popular dish that originated in South Asia. It typically consists of chicken cooked in a spicy sauce made with a blend of aromatic herbs and spices. Chicken curry is often served with rice or bread and can be customized to suit different tastes and preferences.",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
-
+      "Chicken curry is a popular dish in many cuisines around the world. It typically involves cooking chicken pieces in a flavorful sauce made from a combination of spices, herbs, onions, tomatoes, and other ingredients. The dish can be customized with various levels of spiciness and can be enjoyed with rice, bread, or other accompaniments. Indulge in the rich and aromatic flavors of this special chicken curry.",
+    texture: "50% off upto ₹200",
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
+  // {
+  //   id: 9,
+  //   category: "food",
+  //   DeliveryTime: "30 mins",
+  //   img: Biryani1,
+  //   cuisines: ["Desserts", "Ice Cream", "Vegetables", "Food-Item"],
+  //   description: "Chicken Biryani",
+  //   price: 250,
+  //   actualPrice: 300,
+  //   otherImgs: [Biryani1, Biryani1],
+  //   specs:
+  //   "Chicken biryani is a classic Indian dish that features aromatic basmati rice cooked with succulent chicken pieces and a blend of spices. The dish is layered with fried onions, saffron-infused milk, and garnished with fresh coriander leaves. Chicken biryani is a flavorful and satisfying meal that is enjoyed on special occasions or as a hearty meal during gatherings with family and friends.",
+  //   texture: "50% off upto ₹200",
+  //   weight: "Bhimavaram",
+  //   size: "Deliver in 26 mins"
+  // },
 
-// fruit Section-  14 to 18-------------------------------------------------------
-
+  // fruit Section-  14 to 18-------------------------------------------------------
   {
     id: 14,
-    category: " fruits",DeliveryTime: "30 mins",
-    img: Img14, 
-    isVegetarian:true,   
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
+    category: "fruits",
+    DeliveryTime: "30 mins",
+    img: Img14,
+    isVegetarian: true,
+    cuisines: ["Desserts", "Ice Cream", "Fruits", "Food-Item"],
     description: "Oak Spanish Chair",
     price: 520,
+    actualPrice: 728,
     otherImgs: [Img14, Img14],
     specs:
-      "When talking about Børge Mogensen, The Spanish Chair is probably one of the first designs you would think of, which makes good sense as it is also one of his most recognized products around the world.",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
-
-
+      "The Oak Spanish Chair is a beautifully designed piece by Børge Mogensen, known for its elegance and craftsmanship. It is one of his most recognized products worldwide, blending traditional Spanish influences with Danish design sensibilities. The chair features high-quality oak wood and a comfortable seat, making it a perfect addition to any living space.",
+    texture: "50% off upto ₹200",
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
   {
     id: 16,
     category: "fruits",
     DeliveryTime: "30 mins",
-    img: Img16 ,    
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:true,
-    description: "Fruits",
+    img: Img16,
+    cuisines: ["Desserts", "Ice Cream", "Fruits", "Food-Item"],
+    isVegetarian: true,
+    description: "Bananas",
     price: 120,
+    actualPrice: 168,
     otherImgs: [Img16, Img16],
     specs:
-      "Easy Mini W75 from Antidark lives fully up to its name. Simple design, comfortable light, easy to adjust. The Easy Wall Light has made it easy for the user to handle, well, everything! The Easy lamp can turn 360 degrees and be tipped. An ideal lamp that can be placed in connection with other lamps to achieve light in all corners of the room. Furthermore, the lamp can work as a wall light or ceiling",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
-
+      "Bananas are a nutritious fruit that is widely enjoyed for its taste and health benefits. They are rich in potassium, vitamin C, and dietary fiber. Bananas are known for their natural sweetness and creamy texture, making them a versatile ingredient in various dishes and smoothies. They are also a convenient on-the-go snack option. Enjoy the goodness of bananas with this fresh and delicious fruit.",
+    texture: "50% off upto ₹200",
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
   {
     id: 17,
     category: "fruits",
     DeliveryTime: "30 mins",
-    img: Img17,    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:true,
+    img: Img17,
+    cuisines: ["Desserts", "Ice Cream", "Fruits", "Food-Item"],
+    isVegetarian: true,
     description: "Strawberries",
     price: 75,
+    actualPrice: 105,
     otherImgs: [Img17, Img17],
     specs:
-      "The lamp has also become popular in private homes and has especially made a comeback in recent years. This is not least due to the lamp's stylish design and the many color options that make it fit everywhere.",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
-
+      "Strawberries are sweet and juicy fruits that are loved by people of all ages. They are packed with essential nutrients, including vitamins, minerals, and antioxidants. Strawberries can be enjoyed on their own, added to salads, or used in various desserts. Their vibrant red color and refreshing taste make them a delightful treat. Experience the goodness of fresh strawberries with this high-quality product.",
+    texture: "50% off upto ₹200",
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
   {
     id: 18,
-    category: "fruits",DeliveryTime: "30 mins",
-    img: Img18,isVegetarian:true,
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
+    category: "fruits",
+    DeliveryTime: "30 mins",
+    img: Img18,
+    isVegetarian: true,
+    cuisines: ["Desserts", "Ice Cream", "Fruits", "Food-Item"],
     description: "Mangoes",
     price: 175,
-    otherImgs: [ Img18, Img18],
+    actualPrice: 245,
+    otherImgs: [Img18, Img18],
     specs:
-      "Unique offer We give you a special discount when you put this product in the basket. *Only applies to specific products.",
+      "Mangoes are known as the king of fruits and are loved for their sweet and tropical flavor. They are rich in vitamins A and C, as well as dietary fiber. Mangoes can be enjoyed on their own, added to fruit salads, or used in smoothies and desserts. Indulge in the luscious taste of ripe mangoes with this high-quality product.",
     texture: "50% off upto ₹200",
-    weight:  "Bhimavaram",
-    size: "  Deliver in 26 mins",
-
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
   {
     id: 9,
-    category: "fruits",DeliveryTime: "30 mins",
-    img: Kiwi,    
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:true,
+    category: "fruits",
+    DeliveryTime: "30 mins",
+    img: Kiwi,
+    cuisines: ["Desserts", "Ice Cream", "Fruits", "Food-Item"],
+    isVegetarian: true,
     description: "Kiwi",
     price: 161,
+    actualPrice: 225.4,
     otherImgs: [Kiwi, Kiwi],
     specs:
-      "Kubus Vase Lolo was originally designed by Søren Lassen in 2014, but was launched in connection with by Lassens 10 year anniversary 2018. The vase is a natural and sought-after extension of the series, which already counts the Kubus candlesticks and Kubus Bowl Bowl. Set it alone or in a still life, fill it with airy, colorful flowers for a feminine look or leave it alone in all its simplicity and precision.",
-      texture: "40% off upto ₹300",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
+      "Kiwis are small, green fruits with a fuzzy brown exterior and bright green flesh. They are packed with vitamin C, vitamin K, and dietary fiber. Kiwis have a unique tangy-sweet flavor and are often used in fruit salads, smoothies, and desserts. Enjoy the refreshing taste and health benefits of kiwis with this high-quality product.",
+    texture: "40% off upto ₹300",
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
   {
     id: 10,
-    category: "fruits",DeliveryTime: "30 mins",
-    img: Img14,    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:true,
-    description:  "Nagpur Oranges",
+    category: "fruits",
+    DeliveryTime: "30 mins",
+    img: Img14,
+    cuisines: ["Desserts", "Ice Cream", "Fruits", "Food-Item"],
+    isVegetarian: true,
+    description: "Nagpur Oranges",
     price: 89,
+    actualPrice: 124.6,
     otherImgs: [Img14, Img14],
     specs:
-      "Concept: &Tradition's Boomerang lounge chair is a classic Danish design with a modern and minimalist expression. The chair was designed by Hvidt & Mølgaard in 1956, and with its stylish cushions and hand-polished wooden frame, it is an ideal Nordic design that gives a personal mark to the home.",
+      "Nagpur Oranges are famous for their sweet and tangy flavor. They are rich in vitamin C and are known for their juiciness. Nagpur Oranges have a vibrant orange color and are often enjoyed as a snack or used in fresh juices. Experience the goodness of these delicious oranges with this high-quality product.",
     texture: "Wood",
     weight: "8kg",
-    size: "  🕒  Deliver in 20mins",
-
+    size: "🕒 Deliver in 20mins",
   },
-
   {
     id: 56,
-    category: "fruits",DeliveryTime: "30 mins",
-    img: Apple,    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:true,
-    description:  "Shimla Apple",
+    category: "fruits",
+    DeliveryTime: "30 mins",
+    img: Apple,
+    cuisines: ["Desserts", "Ice Cream", "Fruits", "Food-Item"],
+    isVegetarian: true,
+    description: "Shimla Apple",
     price: 89,
-    otherImgs: [ Apple,  Apple],
+    actualPrice: 124.6,
+    otherImgs: [Apple, Apple],
     specs:
-      "Concept: &Tradition's Boomerang lounge chair is a classic Danish design with a modern and minimalist expression. The chair was designed by Hvidt & Mølgaard in 1956, and with its stylish cushions and hand-polished wooden frame, it is an ideal Nordic design that gives a personal mark to the home.",
-      texture: " Use Paytm Card",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
-
+      "Shimla Apples are known for their crisp texture and sweet-tart flavor. They are rich in antioxidants and dietary fiber, making them a healthy choice for snacking. Shimla Apples have a bright red skin and a juicy flesh that is perfect for enjoying fresh or using in various recipes. Taste the freshness of Shimla Apples with this high-quality product.",
+    texture: "Use Paytm Card",
+    weight: "Bhimavaram",
+    size: "Deliver in 26 mins",
   },
 
-
-
-//  Meat Section
+  //  Meat Section
 
   {
     id: 19,
-    category: "meat",DeliveryTime: "30 mins",
-    img: Img19,    
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:false,
+    category: "meat",
+    DeliveryTime: "30 mins",
+    img: Img19,
+    cuisines: ["Chicken", "Pork", "Beef"],
+    isVegetarian: false,
     description: "Family Chicken",
     price: 119,
-    otherImgs: [chick1,chick2],
+    otherImgs: [chick1, chick2],
     specs:
-      "Sum is a series designed by the Danish designer Simon Legald, who is the epitome of modern elegance. Elegant and resolute as the tip of a wing, the armrests spread out invitingly, as if they want to embrace you in the armchair's soft, homely space.",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
-
+      "Family Chicken is a delicious and juicy chicken dish perfect for family meals. It is made with tender chicken pieces seasoned with a special blend of spices and cooked to perfection. Enjoy the rich flavors and succulent texture of this mouthwatering dish.",
+    texture: "Juicy and tender",
+    weight: "500g",
+    size: "Deliver in 30 mins",
   },
   {
     id: 20,
-    category: "meat",DeliveryTime: "30 mins",
-    img: Img20,    
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:false,
-    description:  "Mutton",
+    category: "meat",
+    DeliveryTime: "30 mins",
+    img: Img20,
+    cuisines: ["Lamb", "Goat"],
+    isVegetarian: false,
+    description: "Mutton",
     price: 45,
-    otherImgs: [ bone1, bone2],
+    otherImgs: [bone1, bone2],
     specs:
-      " Mutton is meat obtained from mature sheep, typically over the age of one year, and has a distinct flavor compared to lamb. It is a rich source of protein, iron, and vitamin B12, but can be higher in fat and calories than other meats..",
-     texture: "50% off upto ₹200",
-    weight:  "Bhimavaram",
-    size: "  Deliver in 26 mins",
+      "Mutton is meat obtained from mature sheep, typically over the age of one year, and has a distinct flavor compared to lamb. It is a rich source of protein, iron, and vitamin B12, but can be higher in fat and calories than other meats. Enjoy the robust taste and nutritional benefits of this premium mutton.",
+    texture: "Rich and flavorful",
+    weight: "250g",
+    size: "Deliver in 30 mins",
   },
   {
     id: 21,
-    category: "meat" ,DeliveryTime: "30 mins",
-    cuisines: [ "Desserts", "Ice Cream" ],
-    img: Img20r,   
-    isVegetarian:false,  
-    description:  "Mutton Bone Less",
+    category: "meat",
+    DeliveryTime: "30 mins",
+    cuisines: ["Lamb", "Goat"],
+    img: Img20r,
+    isVegetarian: false,
+    description: "Boneless Mutton",
     price: 45,
-    otherImgs: [ mutton2 , mutton1 ],
+    otherImgs: [mutton2, mutton1],
     specs:
-      "Made from 100% plant-based oils with olive oil as the main ingredient, this cleansing oil is gentle on the skin. Free from fragrance, colours and, mineral oils, paraben free, alcohol free, allergy tested (we cannot guarantee that it will not cause allergies in any users) * How to use: Take a small amount in the palm of your hand, and massage into the face to remove make-up and dirt. Rinse well with cold or warm water.",
-    texture: "50% off upto ₹200",
-    weight:  "Bhimavaram",
-    size: "  Deliver in 26 mins",
+      "Boneless Mutton is a versatile and convenient option for your cooking needs. Made from tender cuts of mutton without bones, it offers the same rich flavor and nutritional benefits as regular mutton. Use it in various dishes and enjoy the succulent texture and mouthwatering taste.",
+    texture: "Tender and succulent",
+    weight: "250g",
+    size: "Deliver in 30 mins",
   },
   {
     id: 22,
-    category: "meat",DeliveryTime: "30 mins",
-    img: chickens,    
-    cuisines: [ "Desserts", "Ice Cream","Vegetables","Food-Item" ],
-    isVegetarian:false,
-    description:  "Chicken",
+    category: "meat",
+    DeliveryTime: "30 mins",
+    img: chicken,
+    cuisines: ["Chicken"],
+    isVegetarian: false,
+    description: "Chicken",
     price: 45,
     otherImgs: [chickens1, chickens2],
     specs:
-      "Made from 100% plant-based oils with olive oil as the main ingredient, this cleansing oil is gentle on the skin. Free from fragrance, colours and, mineral oils, paraben free, alcohol free, allergy tested (we cannot guarantee that it will not cause allergies in any users) * How to use: Take a small amount in the palm of your hand, and massage into the face to remove make-up and dirt. Rinse well with cold or warm water.",
-      texture: "50% off upto ₹200",
-      weight:  "Bhimavaram",
-      size: "  Deliver in 26 mins",
+      "Chicken is a versatile and popular meat choice loved by many. It is known for its tender texture and mild flavor that pairs well with a variety of seasonings and cooking methods. Whether you're grilling, roasting, or stir-frying, our fresh and high-quality chicken will elevate your dishes.",
+    texture: "Tender and juicy",
+    weight: "500g",
+    size: "Deliver in 30 mins",
   },
 ];
- 

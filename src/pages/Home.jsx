@@ -28,9 +28,9 @@ function Home( ) {
         
       />
       <TrendingSlider />  
-      <Slider time={3400}   />
+  
       <Newsletter />
-      <Auth />
+   
       <Footer />
     </>
   );

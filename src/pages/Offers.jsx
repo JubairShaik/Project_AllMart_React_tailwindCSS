@@ -3,11 +3,7 @@ import { Outlet} from "react-router-dom"
 import Slider from './../components/Slider';
 import Newsletter from './../components/Newsletter'; 
 import  berry from "../img/products/berry.png";
-
-
-
-
- 
+import OfferHome from './../components/OfferHome';
 
 
 const OfferCardData = [
@@ -22,12 +18,6 @@ const OfferCardData = [
    
    
 ]
-
-
-
-
-
-
 function OfferCard ({ name, description , imgUrl , home }){
    return(
     <div className="flex justify-center   items-center  ">
@@ -50,7 +40,10 @@ function OfferCard ({ name, description , imgUrl , home }){
 
 const Offers  = () => {
   return (
-  <>
+  <> 
+  <div className="w-full h-auto flex flex-col items-center justify-center ">
+  <OfferHome/>
+  </div>
   <h2 className="sm:text-[8rem]   mt-[8rem] sm:mt-[6rem] text-amber-500 text-[3.6rem] text-center font-extrabold uppercase z-10" >Item of the Day</h2>
   <section className=" flex flex-col   sm:items-center sm:justify-center sm:flex-row ">
      {OfferCardData.map((itemData)=>(
