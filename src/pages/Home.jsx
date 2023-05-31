@@ -8,7 +8,7 @@ import TrendingSlider from "../components/TrendingSlider";
  
 import Slider from './../components/Slider';
 import Heading from './../components/Heading';
-import Auth from './Auth';
+import Marquee from './MarqueeWords';
 import SearchBar from './../components/SearchBar';
 
 
@@ -17,8 +17,8 @@ import SearchBar from './../components/SearchBar';
 function Home( ) {
   return (
     <>
-    <Heading/>
-    <Hero />
+      <Heading/>
+      <Hero />
     
       <ProudProducts />
       <Banner
@@ -30,6 +30,7 @@ function Home( ) {
       <TrendingSlider />  
   
       <Newsletter />
+      <Marquee />
    
       <Footer />
     </>

@@ -10,9 +10,13 @@ import map from "../img/map.png";
 import gift from "../img/gift.png";
 import clock from "../img/clock.png";
 import AddToCartPopup from "./AddToCartPopup";
-import Card from "./Card";
 import VegetarianIndicator from "./VegetarianIndicator";
 import Pricetag from './../components/Pricetag';
+import BlurImage from './../components/BlurImage';
+// BlurImage
+
+
+
 
 export const CartContext = createContext();
 
@@ -61,13 +65,20 @@ function ProductPage() {
         <div className="container  ">
           <div className="product-div ">
             <div className="product-left w-[50%] flex mt-5 sm:mt-14   flex-col justify-center   pt-[5rem] h-full items-center">
-              <div className="sm:w-[57rem] w-[35rem]  h-[22rem] p-4 sm:h-[35rem]  ">
-                <img
-                  src={image}
-                  className="h-full rounded-[1.4rem]  w-full object-cover"
-                  alt="product"
-                />
+         
+
+              <div className=" ">
+
+              <BlurImage item={image} 
+              classNames={`h-full duration-300 rounded-[1.4rem]  w-full object-cover`}
+              divNames={`sm:w-[57rem] w-[35rem]  h-[22rem] p-4 sm:h-[35rem] `}
+              />
               </div>
+         
+
+
+
+
 
               <div className="small-imgs ">
                 <img

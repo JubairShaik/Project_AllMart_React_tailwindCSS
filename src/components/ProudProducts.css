@@ -196,4 +196,12 @@ a {
     .products-grid {
         grid-template-columns: 1fr;
     }
+    
+.CardStyles {
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
+     transition: all 0.2s ;
+}
+
+
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
 
-const Auth = () => {
+const MarqueeWords = () => {
   return (
     <div className="  my-4 z-10 w-full">
       <Marquee
@@ -18,4 +18,4 @@ const Auth = () => {
   );
 }
 
-export default Auth;
+export default MarqueeWords ;

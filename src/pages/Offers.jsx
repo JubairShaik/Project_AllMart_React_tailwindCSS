@@ -4,20 +4,10 @@ import Slider from './../components/Slider';
 import Newsletter from './../components/Newsletter'; 
 import  berry from "../img/products/berry.png";
 import OfferHome from './../components/OfferHome';
+import { OfferCardData } from '../components/AllData.js';
 
 
-const OfferCardData = [
-  {
-    id: 112,
-    name: "We Deliver The Best Coffee",
-    imgUrl : "https://www.shadevelopers.com/wp-content/uploads/2023/03/coffee.webp" ,
-    description: "Fresh Coffee is The Place Where You Can Find the Best Coffee in this Whole Towm ! We Highly Recommend to Visit This Coffee Shop With Your Family Members",
-    home:"Home Delivery Available",
-     
-  },
-   
-   
-]
+
 function OfferCard ({ name, description , imgUrl , home }){
    return(
     <div className="flex justify-center   items-center  ">
@@ -41,10 +31,10 @@ function OfferCard ({ name, description , imgUrl , home }){
 const Offers  = () => {
   return (
   <> 
-  <div className="w-full h-auto flex flex-col items-center justify-center ">
+  <div className="w-full h-auto flex flex-col items-center justify-center">
   <OfferHome/>
   </div>
-  <h2 className="sm:text-[8rem]   mt-[8rem] sm:mt-[6rem] text-amber-500 text-[3.6rem] text-center font-extrabold uppercase z-10" >Item of the Day</h2>
+  <h2 className="sm:text-[8rem] mt-[8rem] sm:mt-[6rem] text-amber-500 text-[3.6rem] text-center font-extrabold uppercase z-10" >Item of the Day</h2>
   <section className=" flex flex-col   sm:items-center sm:justify-center sm:flex-row ">
      {OfferCardData.map((itemData)=>(
         <OfferCard {...itemData} key={itemData.id}  />

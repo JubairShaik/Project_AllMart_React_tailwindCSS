@@ -72,6 +72,25 @@ import fssai from "../img/new/sai.jpeg";
 import beerShampoo1 from "../img/essentials/beershampo.webp";
 import beerShampoo2 from "../img/essentials/beershampo2.webp";
 
+
+
+
+
+
+export const OfferCardData = [
+  {
+    id: 112,
+    name: "We Deliver The Best Coffee",
+    imgUrl : "https://www.shadevelopers.com/wp-content/uploads/2023/03/coffee.webp" ,
+    description: "Fresh Coffee is The Place Where You Can Find the Best Coffee in this Whole Towm ! We Highly Recommend to Visit This Coffee Shop With Your Family Members",
+    home:"Home Delivery Available",
+     
+  },
+   
+   
+]
+
+
 export const items = [
   // Home Essentials
   {

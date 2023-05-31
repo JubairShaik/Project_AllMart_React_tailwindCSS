@@ -51,8 +51,8 @@ const SearchBar = () => {
     onChange={handleInputChange}
     className="py-3 px-2 sm:px-5 sm:py-4 
     cursor-pointer text-orange-700 border
-     h-[4rem]   w-[100%]  font-Poppins text-[1.65rem] 
-      sm:text-[2rem]     border-gray-300 rounded-md"
+     h-[4rem]  w-full   sm:w-[60%]  font-Poppins text-[1.65rem] 
+      sm:text-[2rem]  border-gray-300 rounded-md"
      />
 
   <button

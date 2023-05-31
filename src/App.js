@@ -37,28 +37,20 @@ function App() {
   return (
     <CartContext.Provider value={{ cartItem, addToCart, setCartItem }}>
       <Navbar />
-     <main className="mt-14 md:mt-20 px-4 md:px-16 py-4 w-full">
+     <main className="mt-14 md:mt-20  w-full">
      
      <Routes>
-     
-     
-     
+
      <Route index path="/" element={<Home />} />
      <Route path="offers" element={<Offers/>}/>
-     
      <Route path="categories" element={<Categories />}>
      <Route path="all" element={<All />} />
-     
      <Route path="allmartFoods" element={<Groceries />} />
      <Route path="dairy" element={<Dairy />} />
      <Route path="fruits" element={<FruitsItem />} />
      <Route path="vegetables" element={<Vegetables />} />
      <Route path="meat" element={<Meat/>} />
-     
      <Route path="essentials" element={<Vegs />} />
-     
-     
-
         </Route>
         <Route path="categories/product/:id" element={<ProductPage />} />
         </Routes>
