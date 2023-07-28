@@ -17,17 +17,6 @@ simple shopping experience that puts the focus on the Every day Essentials.</p>
 » Vanila CSS and Tailwindcss(Little bit)<br>
 » React JS
 
-<h2>Screenshots of the Project 📸</h2>
- 
- 
-
-<br><br>
-<h3 align='center'>Categories Page 👇</h3>
-
-<div align='center'>
-<img src='https://user-images.githubusercontent.com/105128267/213868668-55c03494-0835-43e0-9cb1-429b9a243a65.png'/>
-
-<br>
  
 
 
