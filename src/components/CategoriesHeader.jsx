@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function CategoriesHeader() {
+  
   const [btnName, setBtnName] = useState("All");
 
   const handleBtnName = (e) => {

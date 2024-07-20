@@ -21,6 +21,7 @@ import BlurImage from './../components/BlurImage';
 export const CartContext = createContext();
 
 function ProductPage() {
+  
   const handleAddToCart = (itemName) => {
     setItemName(itemName);
     setShowPopup(true);
